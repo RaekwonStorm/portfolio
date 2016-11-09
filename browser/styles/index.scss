@@ -1,0 +1,64 @@
+@import 'social';
+
+.lolslide {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+a {
+  color: black;
+}
+
+.footer {
+  text-align: center;
+  position: sticky;
+  bottom: 10px;
+}
+
+.navbar-default {
+  background-color: inherit;
+  border: none;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+}
+
+.nav > li > a {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.navbar-links {
+  color: black;
+  font-size: 30px;
+}
+
+.navbar-links:hover {
+  text-decoration: underline line-through;
+}
+
+ul .navbar-nav {
+  margin-left: 20px;
+}
+
+.child-content {
+  margin: 4em;
+}
