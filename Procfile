@@ -1,1 +1,1 @@
-web: webpack -w & node server/start.js
+web: node server/start.js
