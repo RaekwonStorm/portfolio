@@ -2,18 +2,18 @@
 import React from 'react';
 
 export default ({pictures, language}) => (
-  <div>
-    <h1>Travel Picture Page Headline Placeholder lel kek!</h1>
+  <div className="child-content">
+    <h1>TRAVEL PHOTOS</h1>
     <div className='row'>
     { pictures.length &&
       pictures.map((picture, i) => (
-      <div className="col-lg-4 col-xs-12" key={picture.id}>
+      <div className="col-lg-4 col-xs-12 travel-pics" key={picture.id}>
         <img className="img-responsive" src={picture.imgUrl}/>
         <div>
         {
           language === "English" ?
-          (<p>{picture.description}</p>) :
-          (<p>{picture.chinese}</p>)
+          (<h5>{picture.description}</h5>) :
+          (<h5>{picture.chinese}</h5>)
         }
         </div>
       </div>

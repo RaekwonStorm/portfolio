@@ -12,8 +12,8 @@ let cryptopass = {
 }
 
 export default ({language}) => (
-  <div>
-    <h1><a href={cryptopass.github}><img src='github.ico'/></a>{cryptopass.name}</h1>
+  <div className="child-content col-lg-12 portfolio">
+    <h1><a href="http://www.github.com/raekwonstorm/cryptopass">{cryptopass.name}<span className="project-btn btn btn-social-icon btn-github"><span className='fa fa-github social-icons'/></span></a></h1>
     <ul>
       <li>{language === 'English' ? cryptopass.description : cryptopass.desc_chinese}</li>
       <li>{language === 'English' ? cryptopass.tech : cryptopass.tech_chinese}</li>
@@ -21,10 +21,10 @@ export default ({language}) => (
 
     <h3>CryptoPass Presentation</h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/pyPG_kuOyAA" frameborder="0" allowfullscreen></iframe>
-    <h5>CryptoPass is a suite of secure applications which encrypts passwords and other sensitive data with your master password and stores them on your machine. CryptoPass also generates strong random passwords for new subscriptions. All you need is one master password to manage all of your secure passwords. The main application is a desktop application; furthermore, we also developed a chrome browser extension and mobile application.
+    <h5>CryptoPass is a suite of secure applications which encrypts passwords and other sensitive data with your master password and stores them on your machine. CryptoPass also generates strong random passwords for new subscriptions. All you need is one master password to manage all of your secure passwords. The main application is a desktop application; furthermore, we also developed a chrome browser extension and mobile application.</h5>
 
-The desktop application is built on Electron, utilizing NodeJS, AngularJS, and Photon. The mobile application is built on the Ionic Framework, which utilizes Dropbox OAUTH to store your encrypted data, and an option for touchId to store a recovery file in case you forget your password. The chrome extension communicates with the desktop application through a secure localhost socket.io server, ensuring information is kept up to date in your browser.
+    <h5>The desktop application is built on Electron, utilizing NodeJS, AngularJS, and Photon. The mobile application is built on the Ionic Framework, which utilizes Dropbox OAUTH to store your encrypted data, and an option for touchId to store a recovery file in case you forget your password. The chrome extension communicates with the desktop application through a secure localhost socket.io server, ensuring information is kept up to date in your browser.</h5>
 
-Download CryptoPass at www.cryptopassapp.com for free.</h5>
+    <h5>Download CryptoPass at www.cryptopassapp.com for free.</h5>
   </div>
 )

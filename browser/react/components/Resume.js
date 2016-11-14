@@ -1,93 +1,68 @@
 'use strict';
 import React from 'react';
 import {Link} from 'react-router';
-import {
-  technical,
-  projects,
-  experience,
-  experienceChinese,
-  education,
-  interest } from './resumecontents';
+import { summary } from './resumecontents';
 
-export default ({language}) => {
-  let expLang = language === 'English' ? experience : experienceChinese;
 
-  return (
-    <div className="child-content">
-      <div className="col-lg-4 col-xs-12">
-        {language === 'English' ? (<h1 className="lolslide">Reed M. Branson</h1>) : (<h1 className="lolslide">黃瑞德</h1>) }
-        {language === 'English' ? (<h4><span className='glyphicon glyphicon-map-marker'></span>New York, NY </h4>): (<h4><span className='glyphicon glyphicon-map-marker'></span>紐約紐約市</h4>)}
-        <h4><a href="mailto:reed.branson@gmail.com"><span className='glyphicon glyphicon-envelope'></span>reed.branson@gmail.com</a></h4>
-        <h4><a href="http://www.linkedin.com/" className="btn btn-social-icon btn-linkedin"><span className='fa fa-linkedin social-icons'></span></a></h4>
-        <h4><a href="http://www.github.com/raekwonstorm" className="btn btn-social-icon btn-github"><span className='fa fa-github social-icons'></span></a></h4>
-      </div>
-      <div className="col-lg-2 col-xs-12">
-        <img className="img-responsive" src='Headshot.jpg'/>
-      </div>
-      <h2><u>Technical Competencies</u></h2>
-        <ul>
-        {
-          technical.map((skill, i) => (
-              <li key={`skill arr ${i}`}>{skill}</li>
-            ))
-        }
-        </ul>
-      <h2><u>Projects</u></h2>
-        <ul>
-          {
-            projects.map((project, i) => (
-            <div key={`project arr ${i}`}>
-              <h4><a href={project.github}><img src='github.ico'/></a>{project.name}</h4>
-              <ul>
-                <li>{language === 'English' ? project.description : project.desc_chinese}</li>
-                <li>{language === 'English' ? project.tech : project.tech_chinese}</li>
-              </ul>
-            </div>
+export default ({language, children}) => (
+  <div className="child-content col-lg-12">
 
-            ))
-          }
-        </ul>
-      <h2><u>Profesh Experience</u></h2>
-        {
-          expLang.map((job, i) => (
-            <div key={`experience arr ${i}`}>
-              <h3>{job.company}</h3>
-              <h4>{job.position} {job.location} {job.date}</h4>
-              <ul>
-                {
-                  job.bullets.map((bullet, i) => (
-                    <li key={`bullet ${i}`}>
-                      {bullet}
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          ))
-        }
-      <h2><u>Educaish</u></h2>
-        <div>
-          <h3>Fullstack Academy of Code </h3>
+    <div className="top-half">
+      <div className="col-lg-4 left-column">
+        <div className="header-name-plate">
+          {language === 'English' ? (<h1 className="stay-left">REED M BRANSON</h1>) : (<h1 className="stay-left">黃瑞德</h1>) }
+          {language === 'English' ? (<h1 className="go-right">WEB DEVELOPER</h1>) : (<h1 className="go-right">軟件工程師</h1>) }
         </div>
-        {
-          education.map((school, i) => (
-            <div key={`school arr ${i}`}>
-              <h3>{language === 'English' ? school.name : school.name_chinese}</h3>
-              <h4>{language === 'English' ? school.degree : school.degree_chinese}</h4>
-              <h5>GPA: {school.gpa}</h5>
-            </div>
-          ))
-        }
-      <h2><u>Interests</u></h2>
-      <ul>
-        {
-          interest.map((interest, i) => (
-            <div key={`interest arr ${i}`}>
-              <li>{language === 'English' ? interest.name : interest.name_chinese }</li>
-            </div>
-          ))
-        }
-      </ul>
+        <div className="summary">
+          {language === 'English' ? (<h2>SUMMARY</h2>) : (<h2>總結</h2>)}
+          {language === 'English' ? (<h5>{summary.english}</h5>) : (<h5>{summary.chinese}</h5>)}
+        </div>
+        <div className="contact">
+          {language === 'English' ? (<h2>CONTACT</h2>) : (<h2>聯繫方式</h2>)}
+          {language === 'English' ? (<h4><span className="btn btn-social-icon btn-reddit"><span className='glyphicon glyphicon-map-marker'/></span>New York, NY </h4>): (<h4><span className="btn btn-social-icon btn-reddit"><span className='glyphicon glyphicon-map-marker'/></span>紐約紐約市</h4>)}
+          <h4><a href="mailto:reed.branson@gmail.com"><span className='btn btn-social-icon btn-google'><span className="glyphicon glyphicon-envelope"/></span>reed.branson@gmail.com</a></h4>
+          <h4><a href="http://www.linkedin.com/in/reed-branson-17481881"><span className="btn btn-social-icon btn-linkedin"><span className='fa fa-linkedin social-icons'/></span>reed-branson-17481881</a></h4>
+          <h4><a href="http://www.github.com/raekwonstorm"><span className="btn btn-social-icon btn-github"><span className='fa fa-github social-icons'/></span>raekwonstorm</a></h4>
+        </div>
+      </div>
+      <div className="col-lg-8 right-column">
+        <div>
+          <img className="img-responsive" id="reedhead" src='/Headshot.jpg'/>
+        </div>
+      </div>
     </div>
-  )
-}
+
+    <div className="bottom-half">
+      <div className="col-lg-4">
+        <Link to="/about/skills">{language === 'English' ? (<h1>SKILLS</h1>) : (<h1>技術能力</h1>)}</Link>
+        <Link to="/about/experience">{language === 'English' ? (<h1>EXPERIENCE</h1>) : (<h1>經驗</h1>)}</Link>
+        <Link to="/work">{language === 'English' ? (<h1>PROJECTS</h1>) : (<h1>作品</h1>)}</Link>
+        <Link to="/about/education">{language === 'English' ? (<h1>EDUCATION</h1>) : (<h1>學歷</h1>)}</Link>
+        <a href="/ReedBransonResume.pdf" target="_blank">{language === 'English' ? (<h3>Download Resume (.pdf)</h3>) : (<h3>下載簡歷(.pdf)</h3>)}</a>
+      </div>
+      <div className="col-lg-8">
+        {children}
+      </div>
+    </div>
+
+  </div>
+)
+
+
+//       <div className="projects">
+//         <h1>Porjex</h1>
+//         <ul>
+//           {
+//             projects.map((project, i) => (
+//             <div key={`project arr ${i}`}>
+//               <h4><a href={project.github}><img src='github.ico'/></a>{project.name}</h4>
+//               <ul>
+//                 <li>{language === 'English' ? project.description : project.desc_chinese}</li>
+//                 <li>{language === 'English' ? project.tech : project.tech_chinese}</li>
+//               </ul>
+//             </div>
+
+//             ))
+//           }
+//         </ul>
+//       </div>

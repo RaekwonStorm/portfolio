@@ -28,18 +28,21 @@ export default ({toggleChinese, toggleEnglish, language}) => (
            <Link to="/about" activeClassName="active">{language === 'English' ? (<span className="navbar-links">ABOUT</span>) : (<span className="navbar-links">簡介</span>)}</Link>
           </li>
           <li className="">
-            <Link to='/portfolio' activeClassName="active">{language === 'English' ? (<span className="navbar-links">WORK</span>) : (<span className="navbar-links">作品</span>)}</Link>
+            <Link to='/work' activeClassName="active">{language === 'English' ? (<span className="navbar-links">WORK</span>) : (<span className="navbar-links">作品</span>)}</Link>
           </li>
           <li>
             <Link to='/travel' activeClassName="active">{language === 'English' ? (<span className="navbar-links">TRAVEL</span>) : (<span className="navbar-links">旅行照片</span>)}</Link>
+          </li>
+          <li>
+            <Link to='/blog' activeClassName="active">{language === 'English' ? (<span className="navbar-links">BLOG</span>) : (<span className="navbar-links">博客</span>)}</Link>
           </li>
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
         { language === 'English' ?  (
-          <img src='toggleChinese.png' onClick={toggleChinese} className="toggle-lang"/>
+          <span onClick={toggleChinese} className="toggle-lang navbar-links">繁體中文</span>
           ) :  (
-          <img src='toggleEnglish.png' onClick={toggleEnglish} className="toggle-lang"/>
+          <span onClick={toggleEnglish} className="toggle-lang navbar-links">ENGLISH</span>
           )
         }
         </ul>
