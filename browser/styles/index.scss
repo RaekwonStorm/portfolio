@@ -1,4 +1,9 @@
 @import 'social';
+@import 'footer';
+@import 'travel';
+@import 'navbar';
+@import 'resume';
+@import 'portfolio';
 
 .lolslide {
   animation-duration: 1s;
@@ -17,57 +22,20 @@
   }
 }
 
-.travel-pics {
-  img {
-    max-width: auto;
-    max-height: 500px;
-  }
+.child-content {
+  min-height: 70vh;
 }
 
 a {
   color: black;
 }
 
-.footer {
-  text-align: center;
-  position: sticky;
-  bottom: 10px;
-}
-
-.navbar-default {
-  background-color: inherit;
-  border: none;
-}
-
-.navbar-collapse {
-  padding-left: 0;
-}
-
-.nav > li > a {
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-.navbar-links {
-  color: black;
-  font-family: "Francois One";
-  font-size: 30px;
-}
-
-.navbar-links:hover {
-  text-decoration: underline line-through;
-}
-
-ul .navbar-nav {
-  margin-left: 20px;
+hr {
+  border-top: 1px solid #999;
 }
 
 .home-info {
   margin: 4em 20em;
-}
-
-.header-name-plate {
-  margin-bottom: 20px;
 }
 
 .toggle-lang {
@@ -78,52 +46,12 @@ ul .navbar-nav {
   margin: 0 -15px;
 }
 
-.skills ul {
-  padding: 0;
-}
-
-.skills span {
-  border-radius: 20px;
-  cursor: auto;
-  margin: 3px 4px;
-}
-
-hr {
-  border-top: 1px solid #999;
-}
-
-.footer-hr {
-  width: 80vw;
-}
-
-.button-description {
-  margin: 20px 0;
-}
-
 h1, h2, h3, h4 {
   font-family: 'Francois One', Helvetica, Arial, sans-serif;
 }
 
 h5, p, li {
   font-family: 'Merriweather', calibri, serif;
-}
-
-.contact .btn {
-  margin-right: 10px;
-}
-
-.top-half {
-  min-height: 550px;
-}
-
-.bottom-half {
-  min-height: 300px;
-}
-
-#reedhead {
-  max-height: 500px;
-  width: auto;
-  margin: 0 auto;
 }
 
 .homepage-background {
@@ -147,27 +75,4 @@ h5, p, li {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-.project-btn {
-  margin-left: 10px;
-}
-
-.portfolio {
-  h1, h3 {
-    text-align: center;
-
-  }
-  iframe {
-    display: block;
-    margin: 0 auto;
-  }
-  h5 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
-.child-content {
-  min-height: 70vh;
 }

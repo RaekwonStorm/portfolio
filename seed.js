@@ -24,6 +24,24 @@ let pics = [
   chinese: "Cook山，，紐西蘭南島",
   location: "Mount Cook，South Island NZ；Cook山，，紐西蘭南島",
   imgUrl: "/pictures/IMG_1043.JPG"
+},
+{
+  description: "Waipio Valley, Big Island HI",
+  chinese: "Waipio谷，夏威夷大島",
+  location: "",
+  imgUrl: "/pictures/IMG_0401.JPG"
+},
+{
+  description: "Mauna Kea Observatory, Big Island HI",
+  chinese: "Mauna Kea天文台，夏威夷大島",
+  location: "",
+  imgUrl: "/pictures/IMG_0547.JPG"
+},
+{
+  description: "Unnamed Black Sand Beach, Big Island HI",
+  chinese: "無名黑沙灘，夏威夷大島",
+  location: "",
+  imgUrl: "/pictures/IMG_0602.JPG"
 }
 ]
 

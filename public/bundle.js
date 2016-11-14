@@ -29527,7 +29527,7 @@
 	      language = _ref.language;
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'child-content col-lg-12' },
+	    { className: 'child-content col-lg-12 travel-page' },
 	    _react2.default.createElement(
 	      'h1',
 	      null,
@@ -29539,21 +29539,26 @@
 	      pictures.length && pictures.map(function (picture, i) {
 	        return _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12 travel-pics', key: picture.id },
-	          _react2.default.createElement('img', { className: 'img-responsive', src: picture.imgUrl }),
+	          null,
 	          _react2.default.createElement(
 	            'div',
-	            null,
-	            language === "English" ? _react2.default.createElement(
-	              'h5',
+	            { className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12 travel-pics', key: picture.id },
+	            _react2.default.createElement('img', { className: 'img-responsive', src: picture.imgUrl }),
+	            _react2.default.createElement(
+	              'div',
 	              null,
-	              picture.description
-	            ) : _react2.default.createElement(
-	              'h5',
-	              null,
-	              picture.chinese
+	              language === "English" ? _react2.default.createElement(
+	                'h5',
+	                null,
+	                picture.description
+	              ) : _react2.default.createElement(
+	                'h5',
+	                null,
+	                picture.chinese
+	              )
 	            )
-	          )
+	          ),
+	          _react2.default.createElement('hr', { className: 'picture-' + i % 3 })
 	        );
 	      })
 	    )
@@ -29615,7 +29620,7 @@
 	      children = _ref.children;
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'child-content col-lg-12' },
+	    { className: 'child-content col-lg-12 resume-page' },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'top-half' },
@@ -29756,7 +29761,7 @@
 	      { className: 'bottom-half' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'col-lg-4 col-md-4 col-sm-12' },
+	        { className: 'col-lg-4 col-md-5 col-sm-12' },
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/about/skills' },
@@ -29825,7 +29830,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'col-lg-8 col-md-8 col-sm-12' },
+	        { className: 'col-lg-8 col-md-7 col-sm-12' },
 	        children
 	      )
 	    )

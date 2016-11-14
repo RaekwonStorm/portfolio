@@ -1,0 +1,54 @@
+.header-name-plate {
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  padding: 0;
+}
+
+.skills span {
+  border-radius: 20px;
+  cursor: auto;
+  margin: 3px 4px;
+}
+
+.button-description {
+  margin: 20px 0;
+}
+
+#reedhead {
+  max-height: 500px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.top-half {
+  min-height: 550px;
+}
+
+.bottom-half {
+  min-height: 300px;
+}
+
+.contact .btn {
+  margin-right: 10px;
+}
+
+.resume-page {
+   @media screen and (max-width: 991px) {
+    text-align: center;
+    margin: 0 12em;
+  }
+  @media screen and (max-width: 875px) {
+    text-align: center;
+    margin: 0 6em;
+  }
+  @media screen and (max-width: 780px) {
+    text-align: center;
+    margin: 0 3em;
+  }
+  @media screen and (max-width: 680px) {
+    text-align: center;
+    margin: 0 0;
+  }
+}

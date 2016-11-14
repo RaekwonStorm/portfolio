@@ -1,0 +1,27 @@
+.navbar-default {
+  background-color: inherit;
+  border: none;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+}
+
+.nav > li > a {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.navbar-links {
+  color: black;
+  font-family: "Francois One";
+  font-size: 30px;
+}
+
+.navbar-links:hover {
+  text-decoration: underline line-through;
+}
+
+ul .navbar-nav {
+  margin-left: 20px;
+}

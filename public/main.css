@@ -1025,29 +1025,37 @@
 .social-icons .fa-youtube, .social-icons .fa-youtube-play, .social-icons .fa-youtube-square {
   background-color: #C52F30; }
 
-.lolslide {
-  animation-duration: 1s;
-  animation-name: slidein; }
+.footer {
+  text-align: center;
+  position: sticky;
+  bottom: 10px; }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
+.footer-hr {
+  width: 80vw; }
 
 .travel-pics img {
   max-width: auto;
   max-height: 500px; }
 
-a {
-  color: black; }
+@media screen and (max-width: 992px) {
+  .travel-pics {
+    text-align: center; }
+    .travel-pics img {
+      margin: 0 auto; } }
 
-.footer {
-  text-align: center;
-  position: sticky;
-  bottom: 10px; }
+@media screen and (max-width: 992px) {
+  .travel-page {
+    text-align: center; } }
+
+.picture-0, .picture-1 {
+  display: none; }
+
+.picture-2 {
+  width: 100%;
+  height: 3px; }
+  @media screen and (max-width: 992px) {
+    .picture-2 {
+      display: none; } }
 
 .navbar-default {
   background-color: inherit;
@@ -1071,17 +1079,8 @@ a {
 ul .navbar-nav {
   margin-left: 20px; }
 
-.home-info {
-  margin: 4em 20em; }
-
 .header-name-plate {
   margin-bottom: 20px; }
-
-.toggle-lang {
-  cursor: pointer; }
-
-.homepage {
-  margin: 0 -15px; }
 
 .skills ul {
   padding: 0; }
@@ -1091,23 +1090,13 @@ ul .navbar-nav {
   cursor: auto;
   margin: 3px 4px; }
 
-hr {
-  border-top: 1px solid #999; }
-
-.footer-hr {
-  width: 80vw; }
-
 .button-description {
   margin: 20px 0; }
 
-h1, h2, h3, h4 {
-  font-family: 'Francois One', Helvetica, Arial, sans-serif; }
-
-h5, p, li {
-  font-family: 'Merriweather', calibri, serif; }
-
-.contact .btn {
-  margin-right: 10px; }
+#reedhead {
+  max-height: 500px;
+  width: auto;
+  margin: 0 auto; }
 
 .top-half {
   min-height: 550px; }
@@ -1115,10 +1104,78 @@ h5, p, li {
 .bottom-half {
   min-height: 300px; }
 
-#reedhead {
-  max-height: 500px;
-  width: auto;
+.contact .btn {
+  margin-right: 10px; }
+
+@media screen and (max-width: 991px) {
+  .resume-page {
+    text-align: center;
+    margin: 0 12em; } }
+
+@media screen and (max-width: 875px) {
+  .resume-page {
+    text-align: center;
+    margin: 0 6em; } }
+
+@media screen and (max-width: 780px) {
+  .resume-page {
+    text-align: center;
+    margin: 0 3em; } }
+
+@media screen and (max-width: 680px) {
+  .resume-page {
+    text-align: center;
+    margin: 0 0; } }
+
+.project-btn {
+  margin-left: 10px; }
+
+.portfolio h1, .portfolio h3 {
+  text-align: center; }
+
+.portfolio iframe {
+  display: block;
   margin: 0 auto; }
+
+.portfolio h5 {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.lolslide {
+  animation-duration: 1s;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.child-content {
+  min-height: 70vh; }
+
+a {
+  color: black; }
+
+hr {
+  border-top: 1px solid #999; }
+
+.home-info {
+  margin: 4em 20em; }
+
+.toggle-lang {
+  cursor: pointer; }
+
+.homepage {
+  margin: 0 -15px; }
+
+h1, h2, h3, h4 {
+  font-family: 'Francois One', Helvetica, Arial, sans-serif; }
+
+h5, p, li {
+  font-family: 'Merriweather', calibri, serif; }
 
 .homepage-background {
   background: #1f1c0d;
@@ -1139,22 +1196,5 @@ h5, p, li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-
-.project-btn {
-  margin-left: 10px; }
-
-.portfolio h1, .portfolio h3 {
-  text-align: center; }
-
-.portfolio iframe {
-  display: block;
-  margin: 0 auto; }
-
-.portfolio h5 {
-  margin-top: 25px;
-  margin-bottom: 25px; }
-
-.child-content {
-  min-height: 70vh; }
 
 /*# sourceMappingURL=main.css.map*/
