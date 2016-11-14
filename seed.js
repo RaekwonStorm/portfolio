@@ -32,8 +32,15 @@ db.sync({force: true})
     return Picture.create(pic);
   })
 })
+.then((picsArr) => {
+  return Promise.all(picsArr);
+})
 .then(() => {
   console.log('Db seeded successfully');
+  process.exit();
 })
-.catch(console.error);
+.catch(console.error)
+.finally(() => {
+  process.exit();
+});
 
