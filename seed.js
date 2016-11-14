@@ -1,3 +1,4 @@
+'use strict';
 const chalk = require('chalk');
 const db = require('./server/db/db');
 require('./server/db/models');
