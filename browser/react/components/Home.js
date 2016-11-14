@@ -4,10 +4,17 @@ import React from 'react';
 export default ({language}) => (
   <div className="homepage">
     <div className="homepage-background">
-      <div className="homepage-text">
-        <h1>High-res background images on your home page make you look cool</h1>
-        <h2>You can't spell 'freedom' without Reed</h2>
-      </div>
+    { language === 'English' ? (
+        <div className="homepage-text">
+          <h1>High-res background images on your home page make you look cool</h1>
+          <h2>You can't spell 'freedom' without Reed</h2>
+        </div>
+      ) : (
+        <div className="homepage-text">
+          <h1>高分辨率背景圖像讓你的主頁看起來超棒的</h1>
+          <h2>這句話不可以翻譯成中文，因為是個關於英文拼寫的笑話</h2>
+        </div>
+      )}
     </div>
   </div>
 )

@@ -2,12 +2,12 @@
 import React from 'react';
 
 export default ({pictures, language}) => (
-  <div className="child-content">
-    <h1>TRAVEL PHOTOS</h1>
+  <div className="child-content col-lg-12">
+    <h1>{language === 'English' ? `TRAVEL PHOTOS` : `旅行照片`}</h1>
     <div className='row'>
     { pictures.length &&
       pictures.map((picture, i) => (
-      <div className="col-lg-4 col-xs-12 travel-pics" key={picture.id}>
+      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 travel-pics" key={picture.id}>
         <img className="img-responsive" src={picture.imgUrl}/>
         <div>
         {

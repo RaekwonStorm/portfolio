@@ -12,7 +12,7 @@ export default ({language}) => (
     ) :   (
       <div>
       <h1>博客</h1>
-      <h4>即將推出</h4>
+      <h4>即將推出...</h4>
       </div>
     )
   }
