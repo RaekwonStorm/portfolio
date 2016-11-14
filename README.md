@@ -1,3 +1,5 @@
+#Portfolio
+
 This is my portfolio site, written in JavaScript, HTML5, and CSS3 on the frontend.
 Additionally, this is the first app I've written from scratch using the React and Redux libraries.
 I realize that Redux is completely unnecessarily for a project of this scale, but I
