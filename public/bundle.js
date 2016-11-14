@@ -29298,7 +29298,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'homepage-background' },
-	      _react2.default.createElement(
+	      language === 'English' ? _react2.default.createElement(
 	        'div',
 	        { className: 'homepage-text' },
 	        _react2.default.createElement(
@@ -29310,6 +29310,19 @@
 	          'h2',
 	          null,
 	          'You can\'t spell \'freedom\' without Reed'
+	        )
+	      ) : _react2.default.createElement(
+	        'div',
+	        { className: 'homepage-text' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          '\u9AD8\u5206\u8FA8\u7387\u80CC\u666F\u5716\u50CF\u8B93\u4F60\u7684\u4E3B\u9801\u770B\u8D77\u4F86\u8D85\u68D2\u7684'
+	        ),
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          '\u9019\u53E5\u8A71\u4E0D\u53EF\u4EE5\u7FFB\u8B6F\u6210\u4E2D\u6587\uFF0C\u56E0\u70BA\u662F\u500B\u95DC\u65BC\u82F1\u6587\u62FC\u5BEB\u7684\u7B11\u8A71'
 	        )
 	      )
 	    )
@@ -29514,11 +29527,11 @@
 	      language = _ref.language;
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'child-content' },
+	    { className: 'child-content col-lg-12' },
 	    _react2.default.createElement(
 	      'h1',
 	      null,
-	      'TRAVEL PHOTOS'
+	      language === 'English' ? 'TRAVEL PHOTOS' : '\u65C5\u884C\u7167\u7247'
 	    ),
 	    _react2.default.createElement(
 	      'div',
@@ -29526,7 +29539,7 @@
 	      pictures.length && pictures.map(function (picture, i) {
 	        return _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-4 col-xs-12 travel-pics', key: picture.id },
+	          { className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12 travel-pics', key: picture.id },
 	          _react2.default.createElement('img', { className: 'img-responsive', src: picture.imgUrl }),
 	          _react2.default.createElement(
 	            'div',
@@ -29608,7 +29621,7 @@
 	      { className: 'top-half' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'col-lg-4 left-column' },
+	        { className: 'col-lg-4 col-md-5 col-sm-12 left-column' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'header-name-plate' },
@@ -29730,7 +29743,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'col-lg-8 right-column' },
+	        { className: 'col-lg-8 col-md-7 col-sm-12 right-column' },
 	        _react2.default.createElement(
 	          'div',
 	          null,
@@ -29743,7 +29756,7 @@
 	      { className: 'bottom-half' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'col-lg-4' },
+	        { className: 'col-lg-4 col-md-4 col-sm-12' },
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/about/skills' },
@@ -29812,7 +29825,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'col-lg-8' },
+	        { className: 'col-lg-8 col-md-8 col-sm-12' },
 	        children
 	      )
 	    )
@@ -29890,25 +29903,25 @@
 	}];
 	
 	var experienceChinese = exports.experienceChinese = [{
-	  company: 'Fullstack Academy of Code',
+	  company: 'Fullstack編成院校',
 	  location: '紐約紐約市',
 	  position: '导师助理, 軟件工程師',
 	  date: '2016年九月份 － 現在',
-	  bullets: ['Teach web development technologies and concepts to over a hundred students, and mentor a team of seven throughout the course', 'Engineer on Agile team for Fullstack Academy\'s internal learning platform, coding bug-fixes, new features, and automated tests', 'Conduct technical admissions interviews for prospective students and make admissions decisions'],
+	  bullets: ['\u6559\u4E00\u767E\u591A\u500B\u5B78\u751F\u7DB2\u7D61\u767C\u5C55\u79D1\u6280\u548C\u6982\u5FF5\uFF0C\u800C\u4E14\u5C08\u9580\u5C0E\u5E2B\u4E03\u500B\u5B78\u751F', '\u5728Agile\u5DE5\u7A0B\u5718\u968A\u767C\u5C55Fullstack\u7684\u5B78\u7FD2\u5E73\u53F0\uFF0C\u5BEB\u65B0\u7684\u529F\u80FD\uFF0C\u4FEE\u5FA9\u4EFB\u4F55\u8EDF\u4EF6\u932F\u8AA4\uFF0C\u9084\u8981\u5BEB\u81EA\u52D5\u6E2C\u8A66', '\u8DDF\u672A\u4F86\u7684\u5B78\u751F\u9032\u884C\u6280\u8853\u9762\u8A66\u800C\u505A\u51FA\u5165\u5B78\u6C7A\u5B9A'],
 	  imgUrl: ''
 	}, {
 	  company: '美國運通公司',
 	  location: '紐約紐約市',
 	  position: '高級金融分析師',
 	  date: '2015年四月份 － 2016年六月份',
-	  bullets: ['Compiled and analyzed data and metrics to support business decisions in the largest market, identifying key drivers of weak top line growth', 'Authored over 20 reports used by senior business and finance leadership to support critical business decisions for a multi- billion dollar business'],
+	  bullets: ['\u70BA\u4E86\u652F\u6301\u6700\u5927\u5E02\u5834\u7684\u696D\u52D9\u6C7A\u7B56\uFF0C\u7DE8\u5BEB\u548C\u5206\u6790\u4E86\u6578\u64DA\u548C\u6307\u6A19\uFF0C\u628A\u4F4E\u6536\u5165\u66FE\u6F32\u7684\u95DC\u9375\u9A45\u52D5\u56E0\u7D20\u5F04\u6E05\u695A\u4E86', '\u70BA\u4E86\u8B93\u9AD8\u7D1A\u5546\u696D\u548C\u8CA1\u52D9\u9818\u5C0E\u7528\u4F86\u652F\u6301\u5341\u5104\u7F8E\u5143\u696D\u52D9\u7684\u95DC\u9375\u696D\u52D9\u6C7A\u7B56\uFF0C\u5BEB\u4E8620\u591A\u4EFD\u5831\u544A'],
 	  imgUrl: ''
 	}, {
 	  company: '美國海軍, 國防局',
 	  location: '檀香山, 夏威夷',
 	  position: '組長, 高級漢語分析師',
 	  date: '2008年九月份 － 2014年一月份',
-	  bullets: ['Developed job qualification training program; trained joint-service military personnel in various analytical, target development, and reporting tools, which increased training efficiency by 30%', 'Wrote and released over 50% of total branch language analyst intelligence reports to national consumers, and garnered an average of 1.3 high significance feedback reports per report', 'Discovered, translated, and reported high significance foreign intelligence that was briefed to President Obama on numerous occasions', 'Compiled and analyzed data to develop a target of high foreign intelligence value, which resulted in over 1000% increase in coverage, and enabled the language team to commence reporting, which the office had not been able to do prior to my arrival'],
+	  bullets: ['\u5236\u5B9A\u4E86\u8077\u696D\u8CC7\u683C\u57F9\u8A13\u7CFB\u7D71\uFF1B\u8A13\u7DF4\u4E86\u5404\u7A2E\u8ECD\u4E8B\u4EBA\u54E1\uFF0C\u8A71\u984C\u5305\u62EC\u8CC7\u6599\u5206\u6790\uFF0C\u76EE\u6A19\u767C\u5C55\uFF0C\u60C5\u5831\u5831\u544A\u7B49\u7B49\uFF1B\u7D66\u6574\u500B\u90E8\u9580\u63D0\u9AD8\u4E86\u6548\u738730%', '\u5411\u5404\u7A2E\u570B\u5BB6\u6A5F\u69CB\u5BEB\u548C\u767C\u4F48\u4E86\u8D85\u904E50%\u7684\u90E8\u9580\u8A9E\u8A00\u5206\u6790\u60C5\u5831\u5831\u544A\uFF0C\u6BCF\u4EFD\u4E5F\u6536\u5230\u4E86\u5E73\u57471.3\u500B\u9AD8\u5EA6\u91CD\u8981\u53CD\u61C9\u5831\u544A', '\u767C\u73FE\uFF0C\u7FFB\u8B6F\u548C\u5831\u544A\u4E86\u975E\u5E38\u91CD\u8981\u7684\u5916\u570B\u60C5\u5831\uFF1B\u5967\u5DF4\u99AC\u7E3D\u7D71\u5169\u6B21\u505A\u51FA\u4E86\u56DE\u61C9', '\u70BA\u4E86\u767C\u5C55\u4E00\u500B\u9AD8\u5EA6\u5916\u570B\u60C5\u5831\u50F9\u503C\u7684\u76EE\u6A19\uFF0C\u7DE8\u5236\u548C\u5206\u6790\u4E86\u8CC7\u6E90\uFF1B\u5F8C\u679C\u662F\u6211\u5011\u90E8\u9580\u7D42\u65BC\u53EF\u4EE5\u958B\u59CB\u5831\u544A\u5916\u570B\u60C5\u5831\u5831\u544A\uFF0C\u56E0\u70BA\u8986\u84CB\u9762\u589E\u52A01000%\u4EE5\u4E0A\n'],
 	  imgUrl: ''
 	}];
 	
@@ -30042,7 +30055,7 @@
 	      _react2.default.createElement(
 	        'h4',
 	        null,
-	        '\u5373\u5C07\u63A8\u51FA'
+	        '\u5373\u5C07\u63A8\u51FA...'
 	      )
 	    )
 	  );
@@ -30111,7 +30124,8 @@
 	          'h3',
 	          null,
 	          _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
-	          'Fullstack Academy of Code '
+	          language === 'English' ? 'Fullstack Academy of Code' : 'Fullstack\u7DE8\u6210\u9662\u6821',
+	          ' '
 	        )
 	      ),
 	      _resumecontents.education && _resumecontents.education.map(function (school, i) {
