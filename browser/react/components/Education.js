@@ -6,7 +6,7 @@ export default ({language}) => (
   <div>
     <div className="education">
       <div>
-        <h3><span className="glyphicon glyphicon-education"/>Fullstack Academy of Code </h3>
+        <h3><span className="glyphicon glyphicon-education"/>{language === 'English' ? `Fullstack Academy of Code` : `Fullstack編成院校` } </h3>
       </div>
       {
         education && education.map((school, i) => (

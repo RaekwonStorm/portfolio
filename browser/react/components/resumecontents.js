@@ -76,11 +76,11 @@ export const experience = [
 
 export const experienceChinese = [
 {
-  company: 'Fullstack Academy of Code',
+  company: 'Fullstack編成院校',
   location: '紐約紐約市',
   position: '导师助理, 軟件工程師',
   date: '2016年九月份 － 現在',
-  bullets: [`Teach web development technologies and concepts to over a hundred students, and mentor a team of seven throughout the course`, `Engineer on Agile team for Fullstack Academy's internal learning platform, coding bug-fixes, new features, and automated tests`, `Conduct technical admissions interviews for prospective students and make admissions decisions`],
+  bullets: [`教一百多個學生網絡發展科技和概念，而且專門導師七個學生`, `在Agile工程團隊發展Fullstack的學習平台，寫新的功能，修復任何軟件錯誤，還要寫自動測試`, `跟未來的學生進行技術面試而做出入學決定`],
   imgUrl: ''
 },
 {
@@ -88,7 +88,7 @@ export const experienceChinese = [
   location: '紐約紐約市',
   position: '高級金融分析師',
   date: '2015年四月份 － 2016年六月份',
-  bullets: [`Compiled and analyzed data and metrics to support business decisions in the largest market, identifying key drivers of weak top line growth`, `Authored over 20 reports used by senior business and finance leadership to support critical business decisions for a multi- billion dollar business`],
+  bullets: [`為了支持最大市場的業務決策，編寫和分析了數據和指標，把低收入曾漲的關鍵驅動因素弄清楚了`, `為了讓高級商業和財務領導用來支持十億美元業務的關鍵業務決策，寫了20多份報告`],
   imgUrl: ''
 },
 {
@@ -96,7 +96,8 @@ export const experienceChinese = [
   location: '檀香山, 夏威夷',
   position: '組長, 高級漢語分析師',
   date: '2008年九月份 － 2014年一月份',
-  bullets: [`Developed job qualification training program; trained joint-service military personnel in various analytical, target development, and reporting tools, which increased training efficiency by 30%`, `Wrote and released over 50% of total branch language analyst intelligence reports to national consumers, and garnered an average of 1.3 high significance feedback reports per report`, `Discovered, translated, and reported high significance foreign intelligence that was briefed to President Obama on numerous occasions`, `Compiled and analyzed data to develop a target of high foreign intelligence value, which resulted in over 1000% increase in coverage, and enabled the language team to commence reporting, which the office had not been able to do prior to my arrival`],
+  bullets: [`制定了職業資格培訓系統；訓練了各種軍事人員，話題包括資料分析，目標發展，情報報告等等；給整個部門提高了效率30%`, `向各種國家機構寫和發佈了超過50%的部門語言分析情報報告，每份也收到了平均1.3個高度重要反應報告`, `發現，翻譯和報告了非常重要的外國情報；奧巴馬總統兩次做出了回應`, `為了發展一個高度外國情報價值的目標，編制和分析了資源；後果是我們部門終於可以開始報告外國情報報告，因為覆蓋面增加1000%以上
+`],
   imgUrl: ''
 }]
 

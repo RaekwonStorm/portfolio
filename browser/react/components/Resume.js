@@ -8,7 +8,7 @@ export default ({language, children}) => (
   <div className="child-content col-lg-12">
 
     <div className="top-half">
-      <div className="col-lg-4 left-column">
+      <div className="col-lg-4 col-md-5 col-sm-12 left-column">
         <div className="header-name-plate">
           {language === 'English' ? (<h1 className="stay-left">REED M BRANSON</h1>) : (<h1 className="stay-left">黃瑞德</h1>) }
           {language === 'English' ? (<h1 className="go-right">WEB DEVELOPER</h1>) : (<h1 className="go-right">軟件工程師</h1>) }
@@ -25,7 +25,7 @@ export default ({language, children}) => (
           <h4><a href="http://www.github.com/raekwonstorm"><span className="btn btn-social-icon btn-github"><span className='fa fa-github social-icons'/></span>raekwonstorm</a></h4>
         </div>
       </div>
-      <div className="col-lg-8 right-column">
+      <div className="col-lg-8 col-md-7 col-sm-12 right-column">
         <div>
           <img className="img-responsive" id="reedhead" src='/Headshot.jpg'/>
         </div>
@@ -33,14 +33,14 @@ export default ({language, children}) => (
     </div>
 
     <div className="bottom-half">
-      <div className="col-lg-4">
+      <div className="col-lg-4 col-md-4 col-sm-12">
         <Link to="/about/skills">{language === 'English' ? (<h1>SKILLS</h1>) : (<h1>技術能力</h1>)}</Link>
         <Link to="/about/experience">{language === 'English' ? (<h1>EXPERIENCE</h1>) : (<h1>經驗</h1>)}</Link>
         <Link to="/work">{language === 'English' ? (<h1>PROJECTS</h1>) : (<h1>作品</h1>)}</Link>
         <Link to="/about/education">{language === 'English' ? (<h1>EDUCATION</h1>) : (<h1>學歷</h1>)}</Link>
         <a href="/ReedBransonResume.pdf" target="_blank">{language === 'English' ? (<h3>Download Resume (.pdf)</h3>) : (<h3>下載簡歷(.pdf)</h3>)}</a>
       </div>
-      <div className="col-lg-8">
+      <div className="col-lg-8 col-md-8 col-sm-12">
         {children}
       </div>
     </div>
