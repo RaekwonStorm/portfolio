@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+pythonserver
+public/*.js*
+public/*.css*
+.env
+*.py
