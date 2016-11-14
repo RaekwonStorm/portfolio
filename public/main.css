@@ -1127,6 +1127,19 @@ ul .navbar-nav {
     text-align: center;
     margin: 0 0; } }
 
+.resume-links:hover {
+  text-decoration: underline line-through;
+  color: black; }
+
+.resume-links:visited {
+  color: black; }
+
+.resume-links:focus {
+  color: black; }
+
+.resume-links:active {
+  color: black; }
+
 .project-btn {
   margin-left: 10px; }
 

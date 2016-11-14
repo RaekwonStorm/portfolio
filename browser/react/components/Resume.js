@@ -34,11 +34,11 @@ export default ({language, children}) => (
 
     <div className="bottom-half">
       <div className="col-lg-4 col-md-5 col-sm-12">
-        <Link to="/about/skills">{language === 'English' ? (<h1>SKILLS</h1>) : (<h1>技術能力</h1>)}</Link>
-        <Link to="/about/experience">{language === 'English' ? (<h1>EXPERIENCE</h1>) : (<h1>經驗</h1>)}</Link>
-        <Link to="/work">{language === 'English' ? (<h1>PROJECTS</h1>) : (<h1>作品</h1>)}</Link>
-        <Link to="/about/education">{language === 'English' ? (<h1>EDUCATION</h1>) : (<h1>學歷</h1>)}</Link>
-        <a href="/ReedBransonResume.pdf" target="_blank">{language === 'English' ? (<h3>Download Resume (.pdf)</h3>) : (<h3>下載簡歷(.pdf)</h3>)}</a>
+        <Link to="/about/skills">{language === 'English' ? (<h1 className="resume-links">SKILLS</h1>) : (<h1 className="resume-links">技術能力</h1>)}</Link>
+        <Link to="/about/experience">{language === 'English' ? (<h1 className="resume-links">EXPERIENCE</h1>) : (<h1 className="resume-links">經驗</h1>)}</Link>
+        <Link to="/work">{language === 'English' ? (<h1 className="resume-links">PROJECTS</h1>) : (<h1 className="resume-links">作品</h1>)}</Link>
+        <Link to="/about/education">{language === 'English' ? (<h1 className="resume-links">EDUCATION</h1>) : (<h1 className="resume-links">學歷</h1>)}</Link>
+        <a href="/ReedBransonResume.pdf" target="_blank">{language === 'English' ? (<h3 className="resume-links">Download Resume (.pdf)</h3>) : (<h3 className="resume-links">下載簡歷(.pdf)</h3>)}</a>
       </div>
       <div className="col-lg-8 col-md-7 col-sm-12">
         {children}
@@ -50,7 +50,7 @@ export default ({language, children}) => (
 
 
 //       <div className="projects">
-//         <h1>Porjex</h1>
+//         <h1 className="resume-links">Porjex</h1>
 //         <ul>
 //           {
 //             projects.map((project, i) => (

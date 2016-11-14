@@ -29767,11 +29767,11 @@
 	          { to: '/about/skills' },
 	          language === 'English' ? _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            'SKILLS'
 	          ) : _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            '\u6280\u8853\u80FD\u529B'
 	          )
 	        ),
@@ -29780,11 +29780,11 @@
 	          { to: '/about/experience' },
 	          language === 'English' ? _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            'EXPERIENCE'
 	          ) : _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            '\u7D93\u9A57'
 	          )
 	        ),
@@ -29793,11 +29793,11 @@
 	          { to: '/work' },
 	          language === 'English' ? _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            'PROJECTS'
 	          ) : _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            '\u4F5C\u54C1'
 	          )
 	        ),
@@ -29806,11 +29806,11 @@
 	          { to: '/about/education' },
 	          language === 'English' ? _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            'EDUCATION'
 	          ) : _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'resume-links' },
 	            '\u5B78\u6B77'
 	          )
 	        ),
@@ -29819,11 +29819,11 @@
 	          { href: '/ReedBransonResume.pdf', target: '_blank' },
 	          language === 'English' ? _react2.default.createElement(
 	            'h3',
-	            null,
+	            { className: 'resume-links' },
 	            'Download Resume (.pdf)'
 	          ) : _react2.default.createElement(
 	            'h3',
-	            null,
+	            { className: 'resume-links' },
 	            '\u4E0B\u8F09\u7C21\u6B77(.pdf)'
 	          )
 	        )
@@ -29838,7 +29838,7 @@
 	};
 	
 	//       <div className="projects">
-	//         <h1>Porjex</h1>
+	//         <h1 className="resume-links">Porjex</h1>
 	//         <ul>
 	//           {
 	//             projects.map((project, i) => (
@@ -29912,21 +29912,21 @@
 	  location: '紐約紐約市',
 	  position: '导师助理, 軟件工程師',
 	  date: '2016年九月份 － 現在',
-	  bullets: ['\u6559\u4E00\u767E\u591A\u500B\u5B78\u751F\u7DB2\u7D61\u767C\u5C55\u79D1\u6280\u548C\u6982\u5FF5\uFF0C\u800C\u4E14\u5C08\u9580\u5C0E\u5E2B\u4E03\u500B\u5B78\u751F', '\u5728Agile\u5DE5\u7A0B\u5718\u968A\u767C\u5C55Fullstack\u7684\u5B78\u7FD2\u5E73\u53F0\uFF0C\u5BEB\u65B0\u7684\u529F\u80FD\uFF0C\u4FEE\u5FA9\u4EFB\u4F55\u8EDF\u4EF6\u932F\u8AA4\uFF0C\u9084\u8981\u5BEB\u81EA\u52D5\u6E2C\u8A66', '\u8DDF\u672A\u4F86\u7684\u5B78\u751F\u9032\u884C\u6280\u8853\u9762\u8A66\u800C\u505A\u51FA\u5165\u5B78\u6C7A\u5B9A'],
+	  bullets: ['\u6559\u4E00\u767E\u591A\u500B\u5B78\u751F\u7DB2\u7D61\u767C\u5C55\u79D1\u6280\u548C\u6982\u5FF5\uFF0C\u55AE\u7368\u8F14\u5C0E\u4E03\u500B\u5B78\u751F', '\u5728Agile\u5DE5\u7A0B\u5718\u968A\u767C\u5C55Fullstack\u7684\u5B78\u7FD2\u5E73\u53F0\uFF0C\u5BEB\u65B0\u7684\u529F\u80FD\uFF0C\u4FEE\u5FA9\u4EFB\u4F55\u8EDF\u4EF6\u932F\u8AA4\uFF0C\u9084\u8981\u5BEB\u81EA\u52D5\u6E2C\u8A66', '\u8DDF\u672A\u4F86\u7684\u5B78\u751F\u9032\u884C\u6280\u8853\u9762\u8A66\u800C\u505A\u51FA\u5165\u5B78\u6C7A\u5B9A'],
 	  imgUrl: ''
 	}, {
 	  company: '美國運通公司',
 	  location: '紐約紐約市',
 	  position: '高級金融分析師',
 	  date: '2015年四月份 － 2016年六月份',
-	  bullets: ['\u70BA\u4E86\u652F\u6301\u6700\u5927\u5E02\u5834\u7684\u696D\u52D9\u6C7A\u7B56\uFF0C\u7DE8\u5BEB\u548C\u5206\u6790\u4E86\u6578\u64DA\u548C\u6307\u6A19\uFF0C\u628A\u4F4E\u6536\u5165\u66FE\u6F32\u7684\u95DC\u9375\u9A45\u52D5\u56E0\u7D20\u5F04\u6E05\u695A\u4E86', '\u70BA\u4E86\u8B93\u9AD8\u7D1A\u5546\u696D\u548C\u8CA1\u52D9\u9818\u5C0E\u7528\u4F86\u652F\u6301\u5341\u5104\u7F8E\u5143\u696D\u52D9\u7684\u95DC\u9375\u696D\u52D9\u6C7A\u7B56\uFF0C\u5BEB\u4E8620\u591A\u4EFD\u5831\u544A'],
+	  bullets: ['\u70BA\u4E86\u652F\u6301\u6700\u5927\u5E02\u5834\u7684\u696D\u52D9\u6C7A\u7B56\uFF0C\u7DE8\u5BEB\u548C\u5206\u6790\u4E86\u6578\u64DA\u548C\u6307\u6A19\uFF0C\u6E05\u695A\u638C\u63E1\u4F4E\u6536\u5165\u66FE\u6F32\u7684\u95DC\u9375\u9A45\u52D5\u56E0\u7D20', '\u5BEB\u4E8620\u591A\u4EFD\u5831\u544A, \u70BA\u4E86\u8B93\u9AD8\u7D1A\u5546\u696D\u548C\u8CA1\u52D9\u9818\u5C0E\u7528\u4F86\u652F\u6301\u5341\u5104\u7F8E\u5143\u696D\u52D9\u7684\u95DC\u9375\u696D\u52D9\u6C7A\u7B56'],
 	  imgUrl: ''
 	}, {
 	  company: '美國海軍, 國防局',
 	  location: '檀香山, 夏威夷',
 	  position: '組長, 高級漢語分析師',
 	  date: '2008年九月份 － 2014年一月份',
-	  bullets: ['\u5236\u5B9A\u4E86\u8077\u696D\u8CC7\u683C\u57F9\u8A13\u7CFB\u7D71\uFF1B\u8A13\u7DF4\u4E86\u5404\u7A2E\u8ECD\u4E8B\u4EBA\u54E1\uFF0C\u8A71\u984C\u5305\u62EC\u8CC7\u6599\u5206\u6790\uFF0C\u76EE\u6A19\u767C\u5C55\uFF0C\u60C5\u5831\u5831\u544A\u7B49\u7B49\uFF1B\u7D66\u6574\u500B\u90E8\u9580\u63D0\u9AD8\u4E86\u6548\u738730%', '\u5411\u5404\u7A2E\u570B\u5BB6\u6A5F\u69CB\u5BEB\u548C\u767C\u4F48\u4E86\u8D85\u904E50%\u7684\u90E8\u9580\u8A9E\u8A00\u5206\u6790\u60C5\u5831\u5831\u544A\uFF0C\u6BCF\u4EFD\u4E5F\u6536\u5230\u4E86\u5E73\u57471.3\u500B\u9AD8\u5EA6\u91CD\u8981\u53CD\u61C9\u5831\u544A', '\u767C\u73FE\uFF0C\u7FFB\u8B6F\u548C\u5831\u544A\u4E86\u975E\u5E38\u91CD\u8981\u7684\u5916\u570B\u60C5\u5831\uFF1B\u5967\u5DF4\u99AC\u7E3D\u7D71\u5169\u6B21\u505A\u51FA\u4E86\u56DE\u61C9', '\u70BA\u4E86\u767C\u5C55\u4E00\u500B\u9AD8\u5EA6\u5916\u570B\u60C5\u5831\u50F9\u503C\u7684\u76EE\u6A19\uFF0C\u7DE8\u5236\u548C\u5206\u6790\u4E86\u8CC7\u6E90\uFF1B\u5F8C\u679C\u662F\u6211\u5011\u90E8\u9580\u7D42\u65BC\u53EF\u4EE5\u958B\u59CB\u5831\u544A\u5916\u570B\u60C5\u5831\u5831\u544A\uFF0C\u56E0\u70BA\u8986\u84CB\u9762\u589E\u52A01000%\u4EE5\u4E0A\n'],
+	  bullets: ['\u5236\u5B9A\u4E86\u8077\u696D\u8CC7\u683C\u57F9\u8A13\u7CFB\u7D71\uFF1B\u8A13\u7DF4\u4E86\u5404\u7A2E\u8ECD\u4E8B\u4EBA\u54E1\uFF0C\u8A71\u984C\u5305\u62EC\u8CC7\u6599\u5206\u6790\uFF0C\u76EE\u6A19\u767C\u5C55\uFF0C\u60C5\u5831\u5831\u544A\u7B49\u7B49\uFF1B\u4FC3\u4F7F\u6574\u500B\u90E8\u9580\u6548\u7387\u63D0\u9AD830%', '\u5411\u5404\u7A2E\u570B\u5BB6\u6A5F\u69CB\u5BEB\u548C\u767C\u4F48\u4E86\u8D85\u904E50%\u7684\u90E8\u9580\u8A9E\u8A00\u5206\u6790\u60C5\u5831\u5831\u544A\uFF0C\u6BCF\u4EFD\u4E5F\u6536\u5230\u4E86\u5E73\u57471.3\u500B\u9AD8\u5EA6\u91CD\u8981\u53CD\u61C9\u5831\u544A', '\u767C\u73FE\uFF0C\u7FFB\u8B6F\u548C\u5831\u544A\u4E86\u975E\u5E38\u91CD\u8981\u7684\u5916\u570B\u60C5\u5831\uFF1B\u5967\u5DF4\u99AC\u7E3D\u7D71\u5169\u6B21\u5C0D\u6B64\u505A\u51FA\u4E86\u56DE\u61C9', '\u70BA\u4E86\u767C\u5C55\u4E00\u500B\u9AD8\u5EA6\u5916\u570B\u60C5\u5831\u50F9\u503C\u7684\u76EE\u6A19\uFF0C\u7DE8\u5236\u548C\u5206\u6790\u4E86\u8CC7\u6E90\uFF1B\u5F8C\u679C\u662F\u6211\u5011\u90E8\u9580\u7D42\u65BC\u53EF\u4EE5\u958B\u59CB\u5831\u544A\u5916\u570B\u60C5\u5831\u5831\u544A\uFF0C\u56E0\u70BA\u8986\u84CB\u9762\u589E\u52A01000%\u4EE5\u4E0A'],
 	  imgUrl: ''
 	}];
 	
