@@ -1079,6 +1079,26 @@
 ul .navbar-nav {
   margin-left: 20px; }
 
+@media screen and (max-width: 767x) {
+  .navbar-links {
+    font-size: 25px; } }
+
+@media screen and (max-width: 635x) {
+  .navbar-right {
+    float: left; } }
+
+.navbar-collapse.collapse {
+  display: block; }
+
+.navbar-nav > li, .navbar-nav {
+  float: left; }
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px; }
+
+.navbar-right {
+  float: right; }
+
 .header-name-plate {
   margin-bottom: 20px; }
 

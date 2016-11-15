@@ -24064,39 +24064,39 @@
 	
 	var _enterHooks = __webpack_require__(262);
 	
-	var _App = __webpack_require__(263);
+	var _App = __webpack_require__(288);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _HomeContainer = __webpack_require__(268);
+	var _HomeContainer = __webpack_require__(293);
 	
 	var _HomeContainer2 = _interopRequireDefault(_HomeContainer);
 	
-	var _PortfolioContainer = __webpack_require__(270);
+	var _PortfolioContainer = __webpack_require__(295);
 	
 	var _PortfolioContainer2 = _interopRequireDefault(_PortfolioContainer);
 	
-	var _TravelContainer = __webpack_require__(272);
+	var _TravelContainer = __webpack_require__(297);
 	
 	var _TravelContainer2 = _interopRequireDefault(_TravelContainer);
 	
-	var _ResumeContainer = __webpack_require__(274);
+	var _ResumeContainer = __webpack_require__(299);
 	
 	var _ResumeContainer2 = _interopRequireDefault(_ResumeContainer);
 	
-	var _BlogContainer = __webpack_require__(277);
+	var _BlogContainer = __webpack_require__(302);
 	
 	var _BlogContainer2 = _interopRequireDefault(_BlogContainer);
 	
-	var _EducationContainer = __webpack_require__(279);
+	var _EducationContainer = __webpack_require__(304);
 	
 	var _EducationContainer2 = _interopRequireDefault(_EducationContainer);
 	
-	var _ExperienceContainer = __webpack_require__(281);
+	var _ExperienceContainer = __webpack_require__(306);
 	
 	var _ExperienceContainer2 = _interopRequireDefault(_ExperienceContainer);
 	
-	var _Skills = __webpack_require__(283);
+	var _Skills = __webpack_require__(308);
 	
 	var _Skills2 = _interopRequireDefault(_Skills);
 	
@@ -28928,7 +28928,7 @@
 	});
 	exports.onTravelEnter = undefined;
 	
-	var _axios = __webpack_require__(284);
+	var _axios = __webpack_require__(263);
 	
 	var _axios2 = _interopRequireDefault(_axios);
 	
@@ -28954,36 +28954,7 @@
 /* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _NavContainer = __webpack_require__(264);
-	
-	var _NavContainer2 = _interopRequireDefault(_NavContainer);
-	
-	var _FooterContainer = __webpack_require__(266);
-	
-	var _FooterContainer2 = _interopRequireDefault(_FooterContainer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var children = _ref.children;
-	  return _react2.default.createElement(
-	    'div',
-	    { id: 'main', className: 'container-fluid' },
-	    _react2.default.createElement(_NavContainer2.default, null),
-	    children,
-	    _react2.default.createElement(_FooterContainer2.default, null)
-	  );
-	};
+	module.exports = __webpack_require__(264);
 
 /***/ },
 /* 264 */
@@ -28991,1351 +28962,9 @@
 
 	'use strict';
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Navbar = __webpack_require__(265);
-	
-	var _Navbar2 = _interopRequireDefault(_Navbar);
-	
-	var _ToggleLanguage = __webpack_require__(206);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
-	  return {
-	    toggleChinese: function toggleChinese() {
-	      dispatch((0, _ToggleLanguage.toggleChinese)());
-	    },
-	    toggleEnglish: function toggleEnglish() {
-	      dispatch((0, _ToggleLanguage.toggleEnglish)());
-	    }
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps);
-	var NavContainer = statefulComponentCreator(_Navbar2.default);
-	exports.default = NavContainer;
-
-/***/ },
-/* 265 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(209);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var toggleChinese = _ref.toggleChinese,
-	      toggleEnglish = _ref.toggleEnglish,
-	      language = _ref.language;
-	  return _react2.default.createElement(
-	    'nav',
-	    { className: 'navbar navbar-default' },
-	    _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'navbar-header' },
-	        _react2.default.createElement(
-	          'button',
-	          { type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1', 'aria-expanded': 'false' },
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'sr-only' },
-	            'Toggle navigation'
-	          ),
-	          _react2.default.createElement('span', { className: 'icon-bar' }),
-	          _react2.default.createElement('span', { className: 'icon-bar' }),
-	          _react2.default.createElement('span', { className: 'icon-bar' })
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'nav navbar-nav' },
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/home', activeClassName: 'active' },
-	              language === 'English' ? _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                'HOME'
-	              ) : _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                '\u4E3B\u9801'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/about', activeClassName: 'active' },
-	              language === 'English' ? _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                'ABOUT'
-	              ) : _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                '\u7C21\u4ECB'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: '' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/work', activeClassName: 'active' },
-	              language === 'English' ? _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                'WORK'
-	              ) : _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                '\u4F5C\u54C1'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/travel', activeClassName: 'active' },
-	              language === 'English' ? _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                'TRAVEL'
-	              ) : _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                '\u65C5\u884C\u7167\u7247'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/blog', activeClassName: 'active' },
-	              language === 'English' ? _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                'BLOG'
-	              ) : _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                '\u535A\u5BA2'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'nav navbar-nav navbar-right' },
-	          language === 'English' ? _react2.default.createElement(
-	            'span',
-	            { onClick: toggleChinese, className: 'toggle-lang navbar-links' },
-	            '\u7E41\u9AD4\u4E2D\u6587'
-	          ) : _react2.default.createElement(
-	            'span',
-	            { onClick: toggleEnglish, className: 'toggle-lang navbar-links' },
-	            'ENGLISH'
-	          )
-	        )
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Footer = __webpack_require__(267);
-	
-	var _Footer2 = _interopRequireDefault(_Footer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var FooterContainer = statefulComponentCreator(_Footer2.default);
-	exports.default = FooterContainer;
-
-/***/ },
-/* 267 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement('hr', { className: 'footer-hr' }),
-	    language === 'English' ? _react2.default.createElement(
-	      'h5',
-	      { className: 'footer' },
-	      '\xA9 Reed M. Branson 2016 ',
-	      _react2.default.createElement('img', { src: '/mybp.bmp' })
-	    ) : _react2.default.createElement(
-	      'h5',
-	      { className: 'footer' },
-	      '\xA9 \u9EC3\u745E\u5FB7 2016\u5E74 ',
-	      _react2.default.createElement('img', { src: '/mybp.bmp' })
-	    )
-	  );
-	};
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Home = __webpack_require__(269);
-	
-	var _Home2 = _interopRequireDefault(_Home);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var HomeContainer = statefulComponentCreator(_Home2.default);
-	exports.default = HomeContainer;
-
-/***/ },
-/* 269 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'homepage' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'homepage-background' },
-	      language === 'English' ? _react2.default.createElement(
-	        'div',
-	        { className: 'homepage-text' },
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'High-res background images on your home page make you look cool'
-	        ),
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'You can\'t spell \'freedom\' without Reed'
-	        )
-	      ) : _react2.default.createElement(
-	        'div',
-	        { className: 'homepage-text' },
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          '\u9AD8\u5206\u8FA8\u7387\u80CC\u666F\u5716\u50CF\u8B93\u4F60\u7684\u4E3B\u9801\u770B\u8D77\u4F86\u8D85\u68D2\u7684'
-	        ),
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          '\u9019\u53E5\u8A71\u4E0D\u53EF\u4EE5\u7FFB\u8B6F\u6210\u4E2D\u6587\uFF0C\u56E0\u70BA\u662F\u500B\u95DC\u65BC\u82F1\u6587\u62FC\u5BEB\u7684\u7B11\u8A71'
-	        )
-	      )
-	    )
-	  );
-	};
-	
-	// <img src="/Background.png"/>
-	// {language === 'English' ?
-	//     (
-	//         <div className="home-info">
-	//             <h3>Hi I'm Reed. I was once a spy, but now I code. Yeah, they can totally see you through your webcam. So uhh... put on some pants, creep.</h3>
-	
-	//             <h3>I'm also fluent in Chinese ("Ohhh, so that's why he has that big thing in the top right corner!"), and make great guac.</h3>
-	
-	//             <h3>I felt like playing around with react and redux, so that's what I used on the front end of this site. I built the backend with node/express, but I also wanted to play around with Python/Flask, so I built another backend with that.</h3>
-	//         </div>
-	//     ) :
-	//     (
-	//         <div className="home-info">
-	//             <h3>你好，我是瑞德。我以前是個間諜，但現在作為一個軟件工程師。對的，我們政府真的可以有你的攝像頭見到你。所以我建議你穿上一雙褲子。</h3>
-	
-	//             <h3>我也會講一口流利的國語 ("原來如此。這解釋著那個在右邊放的東西!")，我也會做一碗非常好吃的guacamole(鰐梨)。</h3>
-	
-	//             <h3>我基本上要玩一下react和redux，所以我在前端用了它們。在後端我用了node和express，但我也要試一下用python和flask，所以我也用了它們寫另外一個後端。</h3>
-	//         </div>
-	//     )
-	// }
-
-/***/ },
-/* 270 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Portfolio = __webpack_require__(271);
-	
-	var _Portfolio2 = _interopRequireDefault(_Portfolio);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var PortfolioContainer = statefulComponentCreator(_Portfolio2.default);
-	exports.default = PortfolioContainer;
-
-/***/ },
-/* 271 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var cryptopass = {
-	  name: 'CryptoPass',
-	  description: 'Tested and developed a suite of mobile, desktop, and browser tools to manage passwords, credit cards, and other sensitive data using AES encryption for data security',
-	  tech: 'Developed in JavaScript with Express.js, Angular, Node.js, Ionic/Cordova, Electron',
-	  github: 'https://github.com/RaekwonStorm/cryptopass',
-	  desc_chinese: '發展了一套軟件，包括異動，電腦，和瀏覽器擴展等APP在內；這套軟件用了AES加密幫用戶管理密碼，信用卡等保密資源',
-	  tech_chinese: '用的科技：JavaScript, Express.js, Angular, Node.js, Ionic/Cordova, Electron',
-	  date: 'August 2016'
-	};
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'child-content col-lg-12 portfolio' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      _react2.default.createElement(
-	        'a',
-	        { href: 'http://www.github.com/raekwonstorm/cryptopass' },
-	        cryptopass.name,
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'project-btn btn btn-social-icon btn-github' },
-	          _react2.default.createElement('span', { className: 'fa fa-github social-icons' })
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        language === 'English' ? cryptopass.description : cryptopass.desc_chinese
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        language === 'English' ? cryptopass.tech : cryptopass.tech_chinese
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'h3',
-	      null,
-	      'CryptoPass Presentation'
-	    ),
-	    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/pyPG_kuOyAA', frameborder: '0', allowfullscreen: true }),
-	    _react2.default.createElement(
-	      'h5',
-	      null,
-	      'CryptoPass is a suite of secure applications which encrypts passwords and other sensitive data with your master password and stores them on your machine. CryptoPass also generates strong random passwords for new subscriptions. All you need is one master password to manage all of your secure passwords. The main application is a desktop application; furthermore, we also developed a chrome browser extension and mobile application.'
-	    ),
-	    _react2.default.createElement(
-	      'h5',
-	      null,
-	      'The desktop application is built on Electron, utilizing NodeJS, AngularJS, and Photon. The mobile application is built on the Ionic Framework, which utilizes Dropbox OAUTH to store your encrypted data, and an option for touchId to store a recovery file in case you forget your password. The chrome extension communicates with the desktop application through a secure localhost socket.io server, ensuring information is kept up to date in your browser.'
-	    ),
-	    _react2.default.createElement(
-	      'h5',
-	      null,
-	      'Download CryptoPass at www.cryptopassapp.com for free.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 272 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _TravelImages = __webpack_require__(273);
-	
-	var _TravelImages2 = _interopRequireDefault(_TravelImages);
-	
-	var _Pictures = __webpack_require__(207);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var pictures = _ref.pictures,
-	      language = _ref.language;
-	
-	  return {
-	    pictures: pictures,
-	    language: language
-	  };
-	};
-	
-	var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
-	  return {
-	    SetPicturesToState: function SetPicturesToState(pictures) {
-	      dispatch((0, _Pictures.SetPicturesToState)(pictures));
-	    }
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps);
-	var TravelContainer = statefulComponentCreator(_TravelImages2.default);
-	exports.default = TravelContainer;
-
-/***/ },
-/* 273 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var pictures = _ref.pictures,
-	      language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'child-content col-lg-12 travel-page' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      language === 'English' ? 'TRAVEL PHOTOS' : '\u65C5\u884C\u7167\u7247'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'row' },
-	      pictures.length && pictures.map(function (picture, i) {
-	        return _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12 travel-pics', key: picture.id },
-	            _react2.default.createElement('img', { className: 'img-responsive', src: picture.imgUrl }),
-	            _react2.default.createElement(
-	              'div',
-	              null,
-	              language === "English" ? _react2.default.createElement(
-	                'h5',
-	                null,
-	                picture.description
-	              ) : _react2.default.createElement(
-	                'h5',
-	                null,
-	                picture.chinese
-	              )
-	            )
-	          ),
-	          _react2.default.createElement('hr', { className: 'picture-' + i % 3 })
-	        );
-	      })
-	    )
-	  );
-	};
-
-/***/ },
-/* 274 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Resume = __webpack_require__(275);
-	
-	var _Resume2 = _interopRequireDefault(_Resume);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var ResumeContainer = statefulComponentCreator(_Resume2.default);
-	exports.default = ResumeContainer;
-
-/***/ },
-/* 275 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(209);
-	
-	var _resumecontents = __webpack_require__(276);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language,
-	      children = _ref.children;
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'child-content col-lg-12 resume-page' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'top-half' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'col-lg-4 col-md-5 col-sm-12 left-column' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'header-name-plate' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h1',
-	            { className: 'stay-left' },
-	            'REED M BRANSON'
-	          ) : _react2.default.createElement(
-	            'h1',
-	            { className: 'stay-left' },
-	            '\u9EC3\u745E\u5FB7'
-	          ),
-	          language === 'English' ? _react2.default.createElement(
-	            'h1',
-	            { className: 'go-right' },
-	            'WEB DEVELOPER'
-	          ) : _react2.default.createElement(
-	            'h1',
-	            { className: 'go-right' },
-	            '\u8EDF\u4EF6\u5DE5\u7A0B\u5E2B'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'summary' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h2',
-	            null,
-	            'SUMMARY'
-	          ) : _react2.default.createElement(
-	            'h2',
-	            null,
-	            '\u7E3D\u7D50'
-	          ),
-	          language === 'English' ? _react2.default.createElement(
-	            'h5',
-	            null,
-	            _resumecontents.summary.english
-	          ) : _react2.default.createElement(
-	            'h5',
-	            null,
-	            _resumecontents.summary.chinese
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'contact' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h2',
-	            null,
-	            'CONTACT'
-	          ) : _react2.default.createElement(
-	            'h2',
-	            null,
-	            '\u806F\u7E6B\u65B9\u5F0F'
-	          ),
-	          language === 'English' ? _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              'span',
-	              { className: 'btn btn-social-icon btn-reddit' },
-	              _react2.default.createElement('span', { className: 'glyphicon glyphicon-map-marker' })
-	            ),
-	            'New York, NY '
-	          ) : _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              'span',
-	              { className: 'btn btn-social-icon btn-reddit' },
-	              _react2.default.createElement('span', { className: 'glyphicon glyphicon-map-marker' })
-	            ),
-	            '\u7D10\u7D04\u7D10\u7D04\u5E02'
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'mailto:reed.branson@gmail.com' },
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'btn btn-social-icon btn-google' },
-	                _react2.default.createElement('span', { className: 'glyphicon glyphicon-envelope' })
-	              ),
-	              'reed.branson@gmail.com'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://www.linkedin.com/in/reed-branson-17481881' },
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'btn btn-social-icon btn-linkedin' },
-	                _react2.default.createElement('span', { className: 'fa fa-linkedin social-icons' })
-	              ),
-	              'reed-branson-17481881'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://www.github.com/raekwonstorm' },
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'btn btn-social-icon btn-github' },
-	                _react2.default.createElement('span', { className: 'fa fa-github social-icons' })
-	              ),
-	              'raekwonstorm'
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'col-lg-8 col-md-7 col-sm-12 right-column' },
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement('img', { className: 'img-responsive', id: 'reedhead', src: '/Headshot.jpg' })
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'bottom-half' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'col-lg-4 col-md-5 col-sm-12' },
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/about/skills' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            'SKILLS'
-	          ) : _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            '\u6280\u8853\u80FD\u529B'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/about/experience' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            'EXPERIENCE'
-	          ) : _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            '\u7D93\u9A57'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/work' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            'PROJECTS'
-	          ) : _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            '\u4F5C\u54C1'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/about/education' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            'EDUCATION'
-	          ) : _react2.default.createElement(
-	            'h1',
-	            { className: 'resume-links' },
-	            '\u5B78\u6B77'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'a',
-	          { href: '/ReedBransonResume.pdf', target: '_blank' },
-	          language === 'English' ? _react2.default.createElement(
-	            'h3',
-	            { className: 'resume-links' },
-	            'Download Resume (.pdf)'
-	          ) : _react2.default.createElement(
-	            'h3',
-	            { className: 'resume-links' },
-	            '\u4E0B\u8F09\u7C21\u6B77(.pdf)'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'col-lg-8 col-md-7 col-sm-12' },
-	        children
-	      )
-	    )
-	  );
-	};
-	
-	//       <div className="projects">
-	//         <h1 className="resume-links">Porjex</h1>
-	//         <ul>
-	//           {
-	//             projects.map((project, i) => (
-	//             <div key={`project arr ${i}`}>
-	//               <h4><a href={project.github}><img src='github.ico'/></a>{project.name}</h4>
-	//               <ul>
-	//                 <li>{language === 'English' ? project.description : project.desc_chinese}</li>
-	//                 <li>{language === 'English' ? project.tech : project.tech_chinese}</li>
-	//               </ul>
-	//             </div>
-	
-	//             ))
-	//           }
-	//         </ul>
-	//       </div>
-
-/***/ },
-/* 276 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var technical = exports.technical = [{ name: 'JavaScript', type: 'btn btn-primary' }, { name: 'Angular', type: 'btn btn-primary' }, { name: 'React', type: 'btn btn-primary' }, { name: 'jQuery', type: 'btn btn-primary' }, { name: 'Redux', type: 'btn btn-primary' }, { name: 'HTML/CSS', type: 'btn btn-primary' }, { name: 'Bootstrap', type: 'btn btn-primary' }, { name: 'Materialize', type: 'btn btn-primary' }, { name: 'Photon', type: 'btn btn-primary' }, { name: 'JSData', type: 'btn btn-primary' }, { name: 'Node', type: 'btn btn-danger' }, { name: 'Express', type: 'btn btn-danger' }, { name: 'SQL', type: 'btn btn-danger' }, { name: 'Sequelize', type: 'btn btn-danger' }, { name: 'PostgreSQL', type: 'btn btn-danger' }, { name: 'MongoDB', type: 'btn btn-danger' }, { name: 'Mongoose', type: 'btn btn-danger' }, { name: 'Python', type: 'btn btn-danger' }, { name: 'Flask', type: 'btn btn-danger' }, { name: 'Alchemy', type: 'btn btn-danger' }, { name: 'Git', type: 'btn btn-success' }, { name: 'Mocha/Chai', type: 'btn btn-success' }, { name: 'React-native', type: 'btn btn-success' }, { name: 'Ionic', type: 'btn btn-success' }, { name: 'Electron', type: 'btn btn-success' }, { name: 'Agile', type: 'btn btn-success' }, { name: 'Karaoke', type: 'btn btn-success' }];
-	
-	var projects = exports.projects = [{
-	  name: 'CryptoPass',
-	  description: 'Tested and developed a suite of mobile, desktop, and browser tools to manage passwords, credit cards, and other sensitive data using AES encryption for data security',
-	  tech: 'Developed in JavaScript with Express.js, Angular, Node.js, Ionic/Cordova, Electron',
-	  github: 'https://github.com/RaekwonStorm/cryptopass',
-	  desc_chinese: '發展了一套軟件，包括異動，電腦，和瀏覽器擴展等APP在內；這套軟件用了AES加密幫用戶管理密碼，信用卡等保密資源',
-	  tech_chinese: '用的科技：JavaScript, Express.js, Angular, Node.js, Ionic/Cordova, Electron',
-	  date: 'August 2016'
-	}, {
-	  name: 'Cryptonic',
-	  description: 'Created mobile app that tracks cryptocurrency price movements against the dollar and identifies arbitrage opportunities',
-	  tech: 'Built with JavaScript using Express.js, Angular, Node.js, Ionic/Cordova, Cheerio, and Highcharts',
-	  github: 'https://github.com/RaekwonStorm/cryptonic',
-	  desc_chinese: '寫了個移動APP，這個APP讓你跟隨不同加密貨幣價格的動作，看看有否任何三角形套利之機會',
-	  tech_chinese: '用的科技：JavaScript using Express.js, Angular, Node.js, Ionic/Cordova, Cheerio, Highcharts',
-	  date: 'August 2016'
-	}];
-	
-	var experience = exports.experience = [{
-	  company: 'Fullstack Academy of Code',
-	  location: 'New York, NY',
-	  position: 'Teaching Fellow and Software Engineer',
-	  date: 'Sep 2016 to Present',
-	  bullets: ['Teach web development technologies and concepts to over a hundred students, and mentor a team of seven throughout the course', 'Engineer on Agile team for Fullstack Academy\'s internal learning platform, coding bug-fixes, new features, and automated tests', 'Conduct technical admissions interviews for prospective students and make admissions decisions'],
-	  imgUrl: ''
-	}, {
-	  company: 'American Express',
-	  location: 'New York, NY',
-	  position: 'Senior Financial Analyst',
-	  date: 'Apr 2015 to Jun 2016',
-	  bullets: ['Compiled and analyzed data and metrics to support business decisions in the largest market, identifying key drivers of weak top line growth', 'Authored over 20 reports used by senior business and finance leadership to support critical business decisions for a multi- billion dollar business'],
-	  imgUrl: ''
-	}, {
-	  company: 'U.S. Navy, National Security Agency',
-	  location: 'Wahiawa, HI',
-	  position: 'Language Team Lead, Senior Chinese Language Analyst',
-	  date: 'Sep 2008 to Jan 2014',
-	  bullets: ['Developed job qualification training program; trained joint-service military personnel in various analytical, target development, and reporting tools, which increased training efficiency by 30%', 'Wrote and released over 50% of total branch language analyst intelligence reports to national consumers, and garnered an average of 1.3 high significance feedback reports per report', 'Discovered, translated, and reported high significance foreign intelligence that was briefed to President Obama on numerous occasions', 'Compiled and analyzed data to develop a target of high foreign intelligence value, which resulted in over 1000% increase in coverage, and enabled the language team to commence reporting, which the office had not been able to do prior to my arrival'],
-	  imgUrl: ''
-	}];
-	
-	var experienceChinese = exports.experienceChinese = [{
-	  company: 'Fullstack編成院校',
-	  location: '紐約紐約市',
-	  position: '导师助理, 軟件工程師',
-	  date: '2016年九月份 － 現在',
-	  bullets: ['\u6559\u4E00\u767E\u591A\u500B\u5B78\u751F\u7DB2\u7D61\u767C\u5C55\u79D1\u6280\u548C\u6982\u5FF5\uFF0C\u55AE\u7368\u8F14\u5C0E\u4E03\u500B\u5B78\u751F', '\u5728Agile\u5DE5\u7A0B\u5718\u968A\u767C\u5C55Fullstack\u7684\u5B78\u7FD2\u5E73\u53F0\uFF0C\u5BEB\u65B0\u7684\u529F\u80FD\uFF0C\u4FEE\u5FA9\u4EFB\u4F55\u8EDF\u4EF6\u932F\u8AA4\uFF0C\u9084\u8981\u5BEB\u81EA\u52D5\u6E2C\u8A66', '\u8DDF\u672A\u4F86\u7684\u5B78\u751F\u9032\u884C\u6280\u8853\u9762\u8A66\u800C\u505A\u51FA\u5165\u5B78\u6C7A\u5B9A'],
-	  imgUrl: ''
-	}, {
-	  company: '美國運通公司',
-	  location: '紐約紐約市',
-	  position: '高級金融分析師',
-	  date: '2015年四月份 － 2016年六月份',
-	  bullets: ['\u70BA\u4E86\u652F\u6301\u6700\u5927\u5E02\u5834\u7684\u696D\u52D9\u6C7A\u7B56\uFF0C\u7DE8\u5BEB\u548C\u5206\u6790\u4E86\u6578\u64DA\u548C\u6307\u6A19\uFF0C\u6E05\u695A\u638C\u63E1\u4F4E\u6536\u5165\u66FE\u6F32\u7684\u95DC\u9375\u9A45\u52D5\u56E0\u7D20', '\u5BEB\u4E8620\u591A\u4EFD\u5831\u544A, \u70BA\u4E86\u8B93\u9AD8\u7D1A\u5546\u696D\u548C\u8CA1\u52D9\u9818\u5C0E\u7528\u4F86\u652F\u6301\u5341\u5104\u7F8E\u5143\u696D\u52D9\u7684\u95DC\u9375\u696D\u52D9\u6C7A\u7B56'],
-	  imgUrl: ''
-	}, {
-	  company: '美國海軍, 國防局',
-	  location: '檀香山, 夏威夷',
-	  position: '組長, 高級漢語分析師',
-	  date: '2008年九月份 － 2014年一月份',
-	  bullets: ['\u5236\u5B9A\u4E86\u8077\u696D\u8CC7\u683C\u57F9\u8A13\u7CFB\u7D71\uFF1B\u8A13\u7DF4\u4E86\u5404\u7A2E\u8ECD\u4E8B\u4EBA\u54E1\uFF0C\u8A71\u984C\u5305\u62EC\u8CC7\u6599\u5206\u6790\uFF0C\u76EE\u6A19\u767C\u5C55\uFF0C\u60C5\u5831\u5831\u544A\u7B49\u7B49\uFF1B\u4FC3\u4F7F\u6574\u500B\u90E8\u9580\u6548\u7387\u63D0\u9AD830%', '\u5411\u5404\u7A2E\u570B\u5BB6\u6A5F\u69CB\u5BEB\u548C\u767C\u4F48\u4E86\u8D85\u904E50%\u7684\u90E8\u9580\u8A9E\u8A00\u5206\u6790\u60C5\u5831\u5831\u544A\uFF0C\u6BCF\u4EFD\u4E5F\u6536\u5230\u4E86\u5E73\u57471.3\u500B\u9AD8\u5EA6\u91CD\u8981\u53CD\u61C9\u5831\u544A', '\u767C\u73FE\uFF0C\u7FFB\u8B6F\u548C\u5831\u544A\u4E86\u975E\u5E38\u91CD\u8981\u7684\u5916\u570B\u60C5\u5831\uFF1B\u5967\u5DF4\u99AC\u7E3D\u7D71\u5169\u6B21\u5C0D\u6B64\u505A\u51FA\u4E86\u56DE\u61C9', '\u70BA\u4E86\u767C\u5C55\u4E00\u500B\u9AD8\u5EA6\u5916\u570B\u60C5\u5831\u50F9\u503C\u7684\u76EE\u6A19\uFF0C\u7DE8\u5236\u548C\u5206\u6790\u4E86\u8CC7\u6E90\uFF1B\u5F8C\u679C\u662F\u6211\u5011\u90E8\u9580\u7D42\u65BC\u53EF\u4EE5\u958B\u59CB\u5831\u544A\u5916\u570B\u60C5\u5831\u5831\u544A\uFF0C\u56E0\u70BA\u8986\u84CB\u9762\u589E\u52A01000%\u4EE5\u4E0A'],
-	  imgUrl: ''
-	}];
-	
-	var education = exports.education = [{
-	  name: 'Shidler College of Business, University of Hawaii at Manoa',
-	  name_chinese: '夏威夷大學Shidler商学院',
-	  degree: 'BBA Finance 2014',
-	  degree_chinese: 'BBA 金融 2014年',
-	  gpa: '4.0',
-	  imgUrl: ''
-	}, {
-	  name: 'Defense Language Institute Foreign Language Center',
-	  name_chinese: '國防語言學院',
-	  degree: 'AA Chinese 2010',
-	  degree_chinese: 'AA 中文 2010年',
-	  gpa: '4.0',
-	  imgUrl: ''
-	}];
-	
-	var interest = exports.interest = [{
-	  name: 'Cooking',
-	  name_chinese: '煮菜',
-	  imgUrl: ''
-	}, {
-	  name: 'Hiking',
-	  name_chinese: '爬山',
-	  imgUrl: ''
-	}, {
-	  name: 'Travel',
-	  name_chinese: '旅遊',
-	  imgUrl: ''
-	}, {
-	  name: 'Technology',
-	  name_chinese: '高科技',
-	  imgUrl: ''
-	}, {
-	  name: 'Camping',
-	  name_chinese: '??',
-	  imgUrl: ''
-	}, {
-	  name: 'Surfing',
-	  name_chinese: '衝浪',
-	  imgUrl: ''
-	}, {
-	  name: 'Chinese History',
-	  name_chinese: '中國歷史',
-	  imgUrl: ''
-	}, {
-	  name: 'Wakeboarding',
-	  name_chinese: '滑水',
-	  imgUrl: ''
-	}];
-	
-	var summary = exports.summary = {
-	  english: "Front-end web developer with a diverse professional background, eager to learn new technologies and work in a tight-knit, cross-functional team. Experienced in data and financial analysis, as well as project and personnel management. Passionate about learning new languages (programming or foreign) and fluent in Mandarin Chinese.",
-	  chinese: "專業經驗廣泛的前端開發者。很喜歡學心的科技，也要在一個密切和跨職能的團隊工作。專業經驗包括數據分析，金融分析，還有項目和人員管理。愛學習新的語言（外語，編程語言都可以）而我也會講一口流利的國語。"
-	};
-
-/***/ },
-/* 277 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Blog = __webpack_require__(278);
-	
-	var _Blog2 = _interopRequireDefault(_Blog);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var BlogContainer = statefulComponentCreator(_Blog2.default);
-	exports.default = BlogContainer;
-
-/***/ },
-/* 278 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'child-content col-lg-12' },
-	    language === 'English' ? _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Blog'
-	      ),
-	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        'Coming soon...'
-	      )
-	    ) : _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        '\u535A\u5BA2'
-	      ),
-	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        '\u5373\u5C07\u63A8\u51FA...'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 279 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Education = __webpack_require__(280);
-	
-	var _Education2 = _interopRequireDefault(_Education);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var EducationContainer = statefulComponentCreator(_Education2.default);
-	exports.default = EducationContainer;
-
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _resumecontents = __webpack_require__(276);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'education' },
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
-	          language === 'English' ? 'Fullstack Academy of Code' : 'Fullstack\u7DE8\u6210\u9662\u6821',
-	          ' '
-	        )
-	      ),
-	      _resumecontents.education && _resumecontents.education.map(function (school, i) {
-	        return _react2.default.createElement(
-	          'div',
-	          { key: 'school arr ' + i },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
-	            language === 'English' ? school.name : school.name_chinese
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            language === 'English' ? school.degree : school.degree_chinese
-	          ),
-	          _react2.default.createElement(
-	            'h5',
-	            null,
-	            'GPA: ',
-	            school.gpa
-	          )
-	        );
-	      })
-	    )
-	  );
-	};
-
-/***/ },
-/* 281 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Experience = __webpack_require__(282);
-	
-	var _Experience2 = _interopRequireDefault(_Experience);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var ExperienceContainer = statefulComponentCreator(_Experience2.default);
-	exports.default = ExperienceContainer;
-
-/***/ },
-/* 282 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _resumecontents = __webpack_require__(276);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	
-	  var expLang = language === 'English' ? _resumecontents.experience : _resumecontents.experienceChinese;
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'experience' },
-	      expLang.map(function (job, i) {
-	        return _react2.default.createElement(
-	          'div',
-	          { key: 'experience arr ' + i },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            job.company
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            job.position
-	          ),
-	          _react2.default.createElement(
-	            'h5',
-	            null,
-	            job.location,
-	            ' | ',
-	            job.date
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            job.bullets.map(function (bullet, i) {
-	              return _react2.default.createElement(
-	                'li',
-	                { key: 'bullet ' + i },
-	                bullet
-	              );
-	            })
-	          )
-	        );
-	      })
-	    )
-	  );
-	};
-
-/***/ },
-/* 283 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _resumecontents = __webpack_require__(276);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function () {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'skills' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'TECHNICAL SKILLS'
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _resumecontents.technical.map(function (skill, i) {
-	        return _react2.default.createElement(
-	          'span',
-	          { className: skill.type, key: 'skill arr ' + i },
-	          skill.name
-	        );
-	      })
-	    ),
-	    _react2.default.createElement('hr', null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'button-description' },
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-primary' },
-	        'Front-end'
-	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-danger' },
-	        'Back-end'
-	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-success' },
-	        'Miscellaneous'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 284 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(285);
-
-/***/ },
-/* 285 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var utils = __webpack_require__(286);
-	var bind = __webpack_require__(287);
-	var Axios = __webpack_require__(288);
+	var utils = __webpack_require__(265);
+	var bind = __webpack_require__(266);
+	var Axios = __webpack_require__(267);
 	
 	/**
 	 * Create an instance of Axios
@@ -30368,15 +28997,15 @@
 	};
 	
 	// Expose Cancel & CancelToken
-	axios.Cancel = __webpack_require__(306);
-	axios.CancelToken = __webpack_require__(307);
-	axios.isCancel = __webpack_require__(303);
+	axios.Cancel = __webpack_require__(285);
+	axios.CancelToken = __webpack_require__(286);
+	axios.isCancel = __webpack_require__(282);
 	
 	// Expose all/spread
 	axios.all = function all(promises) {
 	  return Promise.all(promises);
 	};
-	axios.spread = __webpack_require__(308);
+	axios.spread = __webpack_require__(287);
 	
 	module.exports = axios;
 	
@@ -30385,12 +29014,12 @@
 
 
 /***/ },
-/* 286 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var bind = __webpack_require__(287);
+	var bind = __webpack_require__(266);
 	
 	/*global toString:true*/
 	
@@ -30690,7 +29319,7 @@
 
 
 /***/ },
-/* 287 */
+/* 266 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30707,17 +29336,17 @@
 
 
 /***/ },
-/* 288 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var defaults = __webpack_require__(289);
-	var utils = __webpack_require__(286);
-	var InterceptorManager = __webpack_require__(300);
-	var dispatchRequest = __webpack_require__(301);
-	var isAbsoluteURL = __webpack_require__(304);
-	var combineURLs = __webpack_require__(305);
+	var defaults = __webpack_require__(268);
+	var utils = __webpack_require__(265);
+	var InterceptorManager = __webpack_require__(279);
+	var dispatchRequest = __webpack_require__(280);
+	var isAbsoluteURL = __webpack_require__(283);
+	var combineURLs = __webpack_require__(284);
 	
 	/**
 	 * Create a new instance of Axios
@@ -30798,13 +29427,13 @@
 
 
 /***/ },
-/* 289 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var utils = __webpack_require__(286);
-	var normalizeHeaderName = __webpack_require__(290);
+	var utils = __webpack_require__(265);
+	var normalizeHeaderName = __webpack_require__(269);
 	
 	var PROTECTION_PREFIX = /^\)\]\}',?\n/;
 	var DEFAULT_CONTENT_TYPE = {
@@ -30821,10 +29450,10 @@
 	  var adapter;
 	  if (typeof XMLHttpRequest !== 'undefined') {
 	    // For browsers use XHR adapter
-	    adapter = __webpack_require__(291);
+	    adapter = __webpack_require__(270);
 	  } else if (typeof process !== 'undefined') {
 	    // For node use HTTP adapter
-	    adapter = __webpack_require__(291);
+	    adapter = __webpack_require__(270);
 	  }
 	  return adapter;
 	}
@@ -30891,12 +29520,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 290 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
+	var utils = __webpack_require__(265);
 	
 	module.exports = function normalizeHeaderName(headers, normalizedName) {
 	  utils.forEach(headers, function processHeader(value, name) {
@@ -30909,18 +29538,18 @@
 
 
 /***/ },
-/* 291 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var utils = __webpack_require__(286);
-	var settle = __webpack_require__(292);
-	var buildURL = __webpack_require__(295);
-	var parseHeaders = __webpack_require__(296);
-	var isURLSameOrigin = __webpack_require__(297);
-	var createError = __webpack_require__(293);
-	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(298);
+	var utils = __webpack_require__(265);
+	var settle = __webpack_require__(271);
+	var buildURL = __webpack_require__(274);
+	var parseHeaders = __webpack_require__(275);
+	var isURLSameOrigin = __webpack_require__(276);
+	var createError = __webpack_require__(272);
+	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(277);
 	
 	module.exports = function xhrAdapter(config) {
 	  return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -31016,7 +29645,7 @@
 	    // This is only done if running in a standard browser environment.
 	    // Specifically not if we're in a web worker, or react-native.
 	    if (utils.isStandardBrowserEnv()) {
-	      var cookies = __webpack_require__(299);
+	      var cookies = __webpack_require__(278);
 	
 	      // Add xsrf header
 	      var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -31093,12 +29722,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 292 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var createError = __webpack_require__(293);
+	var createError = __webpack_require__(272);
 	
 	/**
 	 * Resolve or reject a Promise based on response status.
@@ -31124,12 +29753,12 @@
 
 
 /***/ },
-/* 293 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var enhanceError = __webpack_require__(294);
+	var enhanceError = __webpack_require__(273);
 	
 	/**
 	 * Create an Error with the specified message, config, error code, and response.
@@ -31147,7 +29776,7 @@
 
 
 /***/ },
-/* 294 */
+/* 273 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31172,12 +29801,12 @@
 
 
 /***/ },
-/* 295 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
+	var utils = __webpack_require__(265);
 	
 	function encode(val) {
 	  return encodeURIComponent(val).
@@ -31246,12 +29875,12 @@
 
 
 /***/ },
-/* 296 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
+	var utils = __webpack_require__(265);
 	
 	/**
 	 * Parse headers into an object
@@ -31289,12 +29918,12 @@
 
 
 /***/ },
-/* 297 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
+	var utils = __webpack_require__(265);
 	
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -31363,7 +29992,7 @@
 
 
 /***/ },
-/* 298 */
+/* 277 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31405,12 +30034,12 @@
 
 
 /***/ },
-/* 299 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
+	var utils = __webpack_require__(265);
 	
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -31464,12 +30093,12 @@
 
 
 /***/ },
-/* 300 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
+	var utils = __webpack_require__(265);
 	
 	function InterceptorManager() {
 	  this.handlers = [];
@@ -31522,15 +30151,15 @@
 
 
 /***/ },
-/* 301 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
-	var transformData = __webpack_require__(302);
-	var isCancel = __webpack_require__(303);
-	var defaults = __webpack_require__(289);
+	var utils = __webpack_require__(265);
+	var transformData = __webpack_require__(281);
+	var isCancel = __webpack_require__(282);
+	var defaults = __webpack_require__(268);
 	
 	/**
 	 * Throws a `Cancel` if cancellation has been requested.
@@ -31607,12 +30236,12 @@
 
 
 /***/ },
-/* 302 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(286);
+	var utils = __webpack_require__(265);
 	
 	/**
 	 * Transform the data for a request or a response
@@ -31633,7 +30262,7 @@
 
 
 /***/ },
-/* 303 */
+/* 282 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31644,7 +30273,7 @@
 
 
 /***/ },
-/* 304 */
+/* 283 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31664,7 +30293,7 @@
 
 
 /***/ },
-/* 305 */
+/* 284 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31682,7 +30311,7 @@
 
 
 /***/ },
-/* 306 */
+/* 285 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31707,12 +30336,12 @@
 
 
 /***/ },
-/* 307 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Cancel = __webpack_require__(306);
+	var Cancel = __webpack_require__(285);
 	
 	/**
 	 * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -31770,7 +30399,7 @@
 
 
 /***/ },
-/* 308 */
+/* 287 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31801,6 +30430,1361 @@
 	  };
 	};
 
+
+/***/ },
+/* 288 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _NavContainer = __webpack_require__(289);
+	
+	var _NavContainer2 = _interopRequireDefault(_NavContainer);
+	
+	var _FooterContainer = __webpack_require__(291);
+	
+	var _FooterContainer2 = _interopRequireDefault(_FooterContainer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var children = _ref.children;
+	  return _react2.default.createElement(
+	    'div',
+	    { id: 'main', className: 'container-fluid' },
+	    _react2.default.createElement(_NavContainer2.default, null),
+	    children,
+	    _react2.default.createElement(_FooterContainer2.default, null)
+	  );
+	};
+
+/***/ },
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Navbar = __webpack_require__(290);
+	
+	var _Navbar2 = _interopRequireDefault(_Navbar);
+	
+	var _ToggleLanguage = __webpack_require__(206);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
+	  return {
+	    toggleChinese: function toggleChinese() {
+	      dispatch((0, _ToggleLanguage.toggleChinese)());
+	    },
+	    toggleEnglish: function toggleEnglish() {
+	      dispatch((0, _ToggleLanguage.toggleEnglish)());
+	    }
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps);
+	var NavContainer = statefulComponentCreator(_Navbar2.default);
+	exports.default = NavContainer;
+
+/***/ },
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(209);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var toggleChinese = _ref.toggleChinese,
+	      toggleEnglish = _ref.toggleEnglish,
+	      language = _ref.language;
+	  return _react2.default.createElement(
+	    'nav',
+	    { className: 'navbar navbar-default' },
+	    _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'nav navbar-nav' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/home', activeClassName: 'active' },
+	              language === 'English' ? _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                'HOME'
+	              ) : _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                '\u4E3B\u9801'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/about', activeClassName: 'active' },
+	              language === 'English' ? _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                'ABOUT'
+	              ) : _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                '\u7C21\u4ECB'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: '' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/work', activeClassName: 'active' },
+	              language === 'English' ? _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                'WORK'
+	              ) : _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                '\u4F5C\u54C1'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/travel', activeClassName: 'active' },
+	              language === 'English' ? _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                'TRAVEL'
+	              ) : _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                '\u65C5\u884C\u7167\u7247'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/blog', activeClassName: 'active' },
+	              language === 'English' ? _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                'BLOG'
+	              ) : _react2.default.createElement(
+	                'span',
+	                { className: 'navbar-links' },
+	                '\u535A\u5BA2'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'nav navbar-nav navbar-right', id: 'toggle-lang-tag' },
+	          language === 'English' ? _react2.default.createElement(
+	            'span',
+	            { onClick: toggleChinese, className: 'toggle-lang navbar-links' },
+	            '\u7E41\u9AD4\u4E2D\u6587'
+	          ) : _react2.default.createElement(
+	            'span',
+	            { onClick: toggleEnglish, className: 'toggle-lang navbar-links' },
+	            'ENGLISH'
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Footer = __webpack_require__(292);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var FooterContainer = statefulComponentCreator(_Footer2.default);
+	exports.default = FooterContainer;
+
+/***/ },
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement('hr', { className: 'footer-hr' }),
+	    language === 'English' ? _react2.default.createElement(
+	      'h5',
+	      { className: 'footer' },
+	      '\xA9 Reed M. Branson 2016 ',
+	      _react2.default.createElement('img', { src: '/mybp.bmp' })
+	    ) : _react2.default.createElement(
+	      'h5',
+	      { className: 'footer' },
+	      '\xA9 \u9EC3\u745E\u5FB7 2016\u5E74 ',
+	      _react2.default.createElement('img', { src: '/mybp.bmp' })
+	    )
+	  );
+	};
+
+/***/ },
+/* 293 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Home = __webpack_require__(294);
+	
+	var _Home2 = _interopRequireDefault(_Home);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var HomeContainer = statefulComponentCreator(_Home2.default);
+	exports.default = HomeContainer;
+
+/***/ },
+/* 294 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'homepage' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'homepage-background' },
+	      language === 'English' ? _react2.default.createElement(
+	        'div',
+	        { className: 'homepage-text' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'High-res background images on your home page make you look cool'
+	        ),
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'You can\'t spell \'freedom\' without Reed'
+	        )
+	      ) : _react2.default.createElement(
+	        'div',
+	        { className: 'homepage-text' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          '\u9AD8\u5206\u8FA8\u7387\u80CC\u666F\u5716\u50CF\u8B93\u4F60\u7684\u4E3B\u9801\u770B\u8D77\u4F86\u8D85\u68D2\u7684'
+	        ),
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          '\u9019\u53E5\u8A71\u4E0D\u53EF\u4EE5\u7FFB\u8B6F\u6210\u4E2D\u6587\uFF0C\u56E0\u70BA\u662F\u500B\u95DC\u65BC\u82F1\u6587\u62FC\u5BEB\u7684\u7B11\u8A71'
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	// <img src="/Background.png"/>
+	// {language === 'English' ?
+	//     (
+	//         <div className="home-info">
+	//             <h3>Hi I'm Reed. I was once a spy, but now I code. Yeah, they can totally see you through your webcam. So uhh... put on some pants, creep.</h3>
+	
+	//             <h3>I'm also fluent in Chinese ("Ohhh, so that's why he has that big thing in the top right corner!"), and make great guac.</h3>
+	
+	//             <h3>I felt like playing around with react and redux, so that's what I used on the front end of this site. I built the backend with node/express, but I also wanted to play around with Python/Flask, so I built another backend with that.</h3>
+	//         </div>
+	//     ) :
+	//     (
+	//         <div className="home-info">
+	//             <h3>你好，我是瑞德。我以前是個間諜，但現在作為一個軟件工程師。對的，我們政府真的可以有你的攝像頭見到你。所以我建議你穿上一雙褲子。</h3>
+	
+	//             <h3>我也會講一口流利的國語 ("原來如此。這解釋著那個在右邊放的東西!")，我也會做一碗非常好吃的guacamole(鰐梨)。</h3>
+	
+	//             <h3>我基本上要玩一下react和redux，所以我在前端用了它們。在後端我用了node和express，但我也要試一下用python和flask，所以我也用了它們寫另外一個後端。</h3>
+	//         </div>
+	//     )
+	// }
+
+/***/ },
+/* 295 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Portfolio = __webpack_require__(296);
+	
+	var _Portfolio2 = _interopRequireDefault(_Portfolio);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var PortfolioContainer = statefulComponentCreator(_Portfolio2.default);
+	exports.default = PortfolioContainer;
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var cryptopass = {
+	  name: 'CryptoPass',
+	  description: 'Tested and developed a suite of mobile, desktop, and browser tools to manage passwords, credit cards, and other sensitive data using AES encryption for data security',
+	  tech: 'Developed in JavaScript with Express.js, Angular, Node.js, Ionic/Cordova, Electron',
+	  github: 'https://github.com/RaekwonStorm/cryptopass',
+	  desc_chinese: '發展了一套軟件，包括異動，電腦，和瀏覽器擴展等APP在內；這套軟件用了AES加密幫用戶管理密碼，信用卡等保密資源',
+	  tech_chinese: '用的科技：JavaScript, Express.js, Angular, Node.js, Ionic/Cordova, Electron',
+	  date: 'August 2016'
+	};
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'child-content col-lg-12 portfolio' },
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      _react2.default.createElement(
+	        'a',
+	        { href: 'http://www.github.com/raekwonstorm/cryptopass' },
+	        cryptopass.name,
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'project-btn btn btn-social-icon btn-github' },
+	          _react2.default.createElement('span', { className: 'fa fa-github social-icons' })
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'ul',
+	      null,
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        language === 'English' ? cryptopass.description : cryptopass.desc_chinese
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        language === 'English' ? cryptopass.tech : cryptopass.tech_chinese
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'h3',
+	      null,
+	      'CryptoPass Presentation'
+	    ),
+	    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/pyPG_kuOyAA', frameborder: '0', allowfullscreen: true }),
+	    _react2.default.createElement(
+	      'h5',
+	      null,
+	      'CryptoPass is a suite of secure applications which encrypts passwords and other sensitive data with your master password and stores them on your machine. CryptoPass also generates strong random passwords for new subscriptions. All you need is one master password to manage all of your secure passwords. The main application is a desktop application; furthermore, we also developed a chrome browser extension and mobile application.'
+	    ),
+	    _react2.default.createElement(
+	      'h5',
+	      null,
+	      'The desktop application is built on Electron, utilizing NodeJS, AngularJS, and Photon. The mobile application is built on the Ionic Framework, which utilizes Dropbox OAUTH to store your encrypted data, and an option for touchId to store a recovery file in case you forget your password. The chrome extension communicates with the desktop application through a secure localhost socket.io server, ensuring information is kept up to date in your browser.'
+	    ),
+	    _react2.default.createElement(
+	      'h5',
+	      null,
+	      'Download CryptoPass at www.cryptopassapp.com for free.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _TravelImages = __webpack_require__(298);
+	
+	var _TravelImages2 = _interopRequireDefault(_TravelImages);
+	
+	var _Pictures = __webpack_require__(207);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var pictures = _ref.pictures,
+	      language = _ref.language;
+	
+	  return {
+	    pictures: pictures,
+	    language: language
+	  };
+	};
+	
+	var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
+	  return {
+	    SetPicturesToState: function SetPicturesToState(pictures) {
+	      dispatch((0, _Pictures.SetPicturesToState)(pictures));
+	    }
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps);
+	var TravelContainer = statefulComponentCreator(_TravelImages2.default);
+	exports.default = TravelContainer;
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var pictures = _ref.pictures,
+	      language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'child-content col-lg-12 travel-page' },
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      language === 'English' ? 'TRAVEL PHOTOS' : '\u65C5\u884C\u7167\u7247'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row' },
+	      pictures.length && pictures.map(function (picture, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12 travel-pics', key: picture.id },
+	            _react2.default.createElement('img', { className: 'img-responsive', src: picture.imgUrl }),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              language === "English" ? _react2.default.createElement(
+	                'h5',
+	                null,
+	                picture.description
+	              ) : _react2.default.createElement(
+	                'h5',
+	                null,
+	                picture.chinese
+	              )
+	            )
+	          ),
+	          _react2.default.createElement('hr', { className: 'picture-' + i % 3 })
+	        );
+	      })
+	    )
+	  );
+	};
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Resume = __webpack_require__(300);
+	
+	var _Resume2 = _interopRequireDefault(_Resume);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var ResumeContainer = statefulComponentCreator(_Resume2.default);
+	exports.default = ResumeContainer;
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(209);
+	
+	var _resumecontents = __webpack_require__(301);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language,
+	      children = _ref.children;
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'child-content col-lg-12 resume-page' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'top-half' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'col-lg-4 col-md-5 col-sm-12 left-column' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'header-name-plate' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h1',
+	            { className: 'stay-left' },
+	            'REED M BRANSON'
+	          ) : _react2.default.createElement(
+	            'h1',
+	            { className: 'stay-left' },
+	            '\u9EC3\u745E\u5FB7'
+	          ),
+	          language === 'English' ? _react2.default.createElement(
+	            'h1',
+	            { className: 'go-right' },
+	            'WEB DEVELOPER'
+	          ) : _react2.default.createElement(
+	            'h1',
+	            { className: 'go-right' },
+	            '\u8EDF\u4EF6\u5DE5\u7A0B\u5E2B'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'summary' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h2',
+	            null,
+	            'SUMMARY'
+	          ) : _react2.default.createElement(
+	            'h2',
+	            null,
+	            '\u7E3D\u7D50'
+	          ),
+	          language === 'English' ? _react2.default.createElement(
+	            'h5',
+	            null,
+	            _resumecontents.summary.english
+	          ) : _react2.default.createElement(
+	            'h5',
+	            null,
+	            _resumecontents.summary.chinese
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'contact' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h2',
+	            null,
+	            'CONTACT'
+	          ) : _react2.default.createElement(
+	            'h2',
+	            null,
+	            '\u806F\u7E6B\u65B9\u5F0F'
+	          ),
+	          language === 'English' ? _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'btn btn-social-icon btn-reddit' },
+	              _react2.default.createElement('span', { className: 'glyphicon glyphicon-map-marker' })
+	            ),
+	            'New York, NY '
+	          ) : _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'btn btn-social-icon btn-reddit' },
+	              _react2.default.createElement('span', { className: 'glyphicon glyphicon-map-marker' })
+	            ),
+	            '\u7D10\u7D04\u7D10\u7D04\u5E02'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'mailto:reed.branson@gmail.com' },
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'btn btn-social-icon btn-google' },
+	                _react2.default.createElement('span', { className: 'glyphicon glyphicon-envelope' })
+	              ),
+	              'reed.branson@gmail.com'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.linkedin.com/in/reed-branson-17481881' },
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'btn btn-social-icon btn-linkedin' },
+	                _react2.default.createElement('span', { className: 'fa fa-linkedin social-icons' })
+	              ),
+	              'reed-branson-17481881'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.github.com/raekwonstorm' },
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'btn btn-social-icon btn-github' },
+	                _react2.default.createElement('span', { className: 'fa fa-github social-icons' })
+	              ),
+	              'raekwonstorm'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'col-lg-8 col-md-7 col-sm-12 right-column' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement('img', { className: 'img-responsive', id: 'reedhead', src: '/Headshot.jpg' })
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'bottom-half' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'col-lg-4 col-md-5 col-sm-12' },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/about/skills' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            'SKILLS'
+	          ) : _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            '\u6280\u8853\u80FD\u529B'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/about/experience' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            'EXPERIENCE'
+	          ) : _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            '\u7D93\u9A57'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/work' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            'PROJECTS'
+	          ) : _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            '\u4F5C\u54C1'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/about/education' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            'EDUCATION'
+	          ) : _react2.default.createElement(
+	            'h1',
+	            { className: 'resume-links' },
+	            '\u5B78\u6B77'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: '/ReedBransonResume.pdf', target: '_blank' },
+	          language === 'English' ? _react2.default.createElement(
+	            'h3',
+	            { className: 'resume-links' },
+	            'Download Resume (.pdf)'
+	          ) : _react2.default.createElement(
+	            'h3',
+	            { className: 'resume-links' },
+	            '\u4E0B\u8F09\u7C21\u6B77(.pdf)'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'col-lg-8 col-md-7 col-sm-12' },
+	        children
+	      )
+	    )
+	  );
+	};
+	
+	//       <div className="projects">
+	//         <h1 className="resume-links">Porjex</h1>
+	//         <ul>
+	//           {
+	//             projects.map((project, i) => (
+	//             <div key={`project arr ${i}`}>
+	//               <h4><a href={project.github}><img src='github.ico'/></a>{project.name}</h4>
+	//               <ul>
+	//                 <li>{language === 'English' ? project.description : project.desc_chinese}</li>
+	//                 <li>{language === 'English' ? project.tech : project.tech_chinese}</li>
+	//               </ul>
+	//             </div>
+	
+	//             ))
+	//           }
+	//         </ul>
+	//       </div>
+
+/***/ },
+/* 301 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var technical = exports.technical = [{ name: 'JavaScript', type: 'btn btn-primary' }, { name: 'Angular', type: 'btn btn-primary' }, { name: 'React', type: 'btn btn-primary' }, { name: 'jQuery', type: 'btn btn-primary' }, { name: 'Redux', type: 'btn btn-primary' }, { name: 'HTML/CSS', type: 'btn btn-primary' }, { name: 'Bootstrap', type: 'btn btn-primary' }, { name: 'Materialize', type: 'btn btn-primary' }, { name: 'Photon', type: 'btn btn-primary' }, { name: 'JSData', type: 'btn btn-primary' }, { name: 'Node', type: 'btn btn-danger' }, { name: 'Express', type: 'btn btn-danger' }, { name: 'SQL', type: 'btn btn-danger' }, { name: 'Sequelize', type: 'btn btn-danger' }, { name: 'PostgreSQL', type: 'btn btn-danger' }, { name: 'MongoDB', type: 'btn btn-danger' }, { name: 'Mongoose', type: 'btn btn-danger' }, { name: 'Python', type: 'btn btn-danger' }, { name: 'Flask', type: 'btn btn-danger' }, { name: 'Alchemy', type: 'btn btn-danger' }, { name: 'Git', type: 'btn btn-success' }, { name: 'Mocha/Chai', type: 'btn btn-success' }, { name: 'React-native', type: 'btn btn-success' }, { name: 'Ionic', type: 'btn btn-success' }, { name: 'Electron', type: 'btn btn-success' }, { name: 'Agile', type: 'btn btn-success' }, { name: 'Karaoke', type: 'btn btn-success' }];
+	
+	var projects = exports.projects = [{
+	  name: 'CryptoPass',
+	  description: 'Tested and developed a suite of mobile, desktop, and browser tools to manage passwords, credit cards, and other sensitive data using AES encryption for data security',
+	  tech: 'Developed in JavaScript with Express.js, Angular, Node.js, Ionic/Cordova, Electron',
+	  github: 'https://github.com/RaekwonStorm/cryptopass',
+	  desc_chinese: '發展了一套軟件，包括異動，電腦，和瀏覽器擴展等APP在內；這套軟件用了AES加密幫用戶管理密碼，信用卡等保密資源',
+	  tech_chinese: '用的科技：JavaScript, Express.js, Angular, Node.js, Ionic/Cordova, Electron',
+	  date: 'August 2016'
+	}, {
+	  name: 'Cryptonic',
+	  description: 'Created mobile app that tracks cryptocurrency price movements against the dollar and identifies arbitrage opportunities',
+	  tech: 'Built with JavaScript using Express.js, Angular, Node.js, Ionic/Cordova, Cheerio, and Highcharts',
+	  github: 'https://github.com/RaekwonStorm/cryptonic',
+	  desc_chinese: '寫了個移動APP，這個APP讓你跟隨不同加密貨幣價格的動作，看看有否任何三角形套利之機會',
+	  tech_chinese: '用的科技：JavaScript using Express.js, Angular, Node.js, Ionic/Cordova, Cheerio, Highcharts',
+	  date: 'August 2016'
+	}];
+	
+	var experience = exports.experience = [{
+	  company: 'Fullstack Academy of Code',
+	  location: 'New York, NY',
+	  position: 'Teaching Fellow and Software Engineer',
+	  date: 'Sep 2016 to Present',
+	  bullets: ['Teach web development technologies and concepts to over a hundred students, and mentor a team of seven throughout the course', 'Engineer on Agile team for Fullstack Academy\'s internal learning platform, coding bug-fixes, new features, and automated tests', 'Conduct technical admissions interviews for prospective students and make admissions decisions'],
+	  imgUrl: ''
+	}, {
+	  company: 'American Express',
+	  location: 'New York, NY',
+	  position: 'Senior Financial Analyst',
+	  date: 'Apr 2015 to Jun 2016',
+	  bullets: ['Compiled and analyzed data and metrics to support business decisions in the largest market, identifying key drivers of weak top line growth', 'Authored over 20 reports used by senior business and finance leadership to support critical business decisions for a multi- billion dollar business'],
+	  imgUrl: ''
+	}, {
+	  company: 'U.S. Navy, National Security Agency',
+	  location: 'Wahiawa, HI',
+	  position: 'Language Team Lead, Senior Chinese Language Analyst',
+	  date: 'Sep 2008 to Jan 2014',
+	  bullets: ['Developed job qualification training program; trained joint-service military personnel in various analytical, target development, and reporting tools, which increased training efficiency by 30%', 'Wrote and released over 50% of total branch language analyst intelligence reports to national consumers, and garnered an average of 1.3 high significance feedback reports per report', 'Discovered, translated, and reported high significance foreign intelligence that was briefed to President Obama on numerous occasions', 'Compiled and analyzed data to develop a target of high foreign intelligence value, which resulted in over 1000% increase in coverage, and enabled the language team to commence reporting, which the office had not been able to do prior to my arrival'],
+	  imgUrl: ''
+	}];
+	
+	var experienceChinese = exports.experienceChinese = [{
+	  company: 'Fullstack編成院校',
+	  location: '紐約紐約市',
+	  position: '导师助理, 軟件工程師',
+	  date: '2016年九月份 － 現在',
+	  bullets: ['\u6559\u4E00\u767E\u591A\u500B\u5B78\u751F\u7DB2\u7D61\u767C\u5C55\u79D1\u6280\u548C\u6982\u5FF5\uFF0C\u55AE\u7368\u8F14\u5C0E\u4E03\u500B\u5B78\u751F', '\u5728Agile\u5DE5\u7A0B\u5718\u968A\u767C\u5C55Fullstack\u7684\u5B78\u7FD2\u5E73\u53F0\uFF0C\u5BEB\u65B0\u7684\u529F\u80FD\uFF0C\u4FEE\u5FA9\u4EFB\u4F55\u8EDF\u4EF6\u932F\u8AA4\uFF0C\u9084\u8981\u5BEB\u81EA\u52D5\u6E2C\u8A66', '\u8DDF\u672A\u4F86\u7684\u5B78\u751F\u9032\u884C\u6280\u8853\u9762\u8A66\u800C\u505A\u51FA\u5165\u5B78\u6C7A\u5B9A'],
+	  imgUrl: ''
+	}, {
+	  company: '美國運通公司',
+	  location: '紐約紐約市',
+	  position: '高級金融分析師',
+	  date: '2015年四月份 － 2016年六月份',
+	  bullets: ['\u70BA\u4E86\u652F\u6301\u6700\u5927\u5E02\u5834\u7684\u696D\u52D9\u6C7A\u7B56\uFF0C\u7DE8\u5BEB\u548C\u5206\u6790\u4E86\u6578\u64DA\u548C\u6307\u6A19\uFF0C\u6E05\u695A\u638C\u63E1\u4F4E\u6536\u5165\u66FE\u6F32\u7684\u95DC\u9375\u9A45\u52D5\u56E0\u7D20', '\u5BEB\u4E8620\u591A\u4EFD\u5831\u544A, \u70BA\u4E86\u8B93\u9AD8\u7D1A\u5546\u696D\u548C\u8CA1\u52D9\u9818\u5C0E\u7528\u4F86\u652F\u6301\u5341\u5104\u7F8E\u5143\u696D\u52D9\u7684\u95DC\u9375\u696D\u52D9\u6C7A\u7B56'],
+	  imgUrl: ''
+	}, {
+	  company: '美國海軍, 國防局',
+	  location: '檀香山, 夏威夷',
+	  position: '組長, 高級漢語分析師',
+	  date: '2008年九月份 － 2014年一月份',
+	  bullets: ['\u5236\u5B9A\u4E86\u8077\u696D\u8CC7\u683C\u57F9\u8A13\u7CFB\u7D71\uFF1B\u8A13\u7DF4\u4E86\u5404\u7A2E\u8ECD\u4E8B\u4EBA\u54E1\uFF0C\u8A71\u984C\u5305\u62EC\u8CC7\u6599\u5206\u6790\uFF0C\u76EE\u6A19\u767C\u5C55\uFF0C\u60C5\u5831\u5831\u544A\u7B49\u7B49\uFF1B\u4FC3\u4F7F\u6574\u500B\u90E8\u9580\u6548\u7387\u63D0\u9AD830%', '\u5411\u5404\u7A2E\u570B\u5BB6\u6A5F\u69CB\u5BEB\u548C\u767C\u4F48\u4E86\u8D85\u904E50%\u7684\u90E8\u9580\u8A9E\u8A00\u5206\u6790\u60C5\u5831\u5831\u544A\uFF0C\u6BCF\u4EFD\u4E5F\u6536\u5230\u4E86\u5E73\u57471.3\u500B\u9AD8\u5EA6\u91CD\u8981\u53CD\u61C9\u5831\u544A', '\u767C\u73FE\uFF0C\u7FFB\u8B6F\u548C\u5831\u544A\u4E86\u975E\u5E38\u91CD\u8981\u7684\u5916\u570B\u60C5\u5831\uFF1B\u5967\u5DF4\u99AC\u7E3D\u7D71\u5169\u6B21\u5C0D\u6B64\u505A\u51FA\u4E86\u56DE\u61C9', '\u70BA\u4E86\u767C\u5C55\u4E00\u500B\u9AD8\u5EA6\u5916\u570B\u60C5\u5831\u50F9\u503C\u7684\u76EE\u6A19\uFF0C\u7DE8\u5236\u548C\u5206\u6790\u4E86\u8CC7\u6E90\uFF1B\u5F8C\u679C\u662F\u6211\u5011\u90E8\u9580\u7D42\u65BC\u53EF\u4EE5\u958B\u59CB\u5831\u544A\u5916\u570B\u60C5\u5831\u5831\u544A\uFF0C\u56E0\u70BA\u8986\u84CB\u9762\u589E\u52A01000%\u4EE5\u4E0A'],
+	  imgUrl: ''
+	}];
+	
+	var education = exports.education = [{
+	  name: 'Shidler College of Business, University of Hawaii at Manoa',
+	  name_chinese: '夏威夷大學Shidler商学院',
+	  degree: 'BBA Finance 2014',
+	  degree_chinese: 'BBA 金融 2014年',
+	  gpa: '4.0',
+	  imgUrl: ''
+	}, {
+	  name: 'Defense Language Institute Foreign Language Center',
+	  name_chinese: '國防語言學院',
+	  degree: 'AA Chinese 2010',
+	  degree_chinese: 'AA 中文 2010年',
+	  gpa: '4.0',
+	  imgUrl: ''
+	}];
+	
+	var interest = exports.interest = [{
+	  name: 'Cooking',
+	  name_chinese: '煮菜',
+	  imgUrl: ''
+	}, {
+	  name: 'Hiking',
+	  name_chinese: '爬山',
+	  imgUrl: ''
+	}, {
+	  name: 'Travel',
+	  name_chinese: '旅遊',
+	  imgUrl: ''
+	}, {
+	  name: 'Technology',
+	  name_chinese: '高科技',
+	  imgUrl: ''
+	}, {
+	  name: 'Camping',
+	  name_chinese: '??',
+	  imgUrl: ''
+	}, {
+	  name: 'Surfing',
+	  name_chinese: '衝浪',
+	  imgUrl: ''
+	}, {
+	  name: 'Chinese History',
+	  name_chinese: '中國歷史',
+	  imgUrl: ''
+	}, {
+	  name: 'Wakeboarding',
+	  name_chinese: '滑水',
+	  imgUrl: ''
+	}];
+	
+	var summary = exports.summary = {
+	  english: "Front-end web developer with a diverse professional background, eager to learn new technologies and work in a tight-knit, cross-functional team. Experienced in data and financial analysis, as well as project and personnel management. Passionate about learning new languages (programming or foreign) and fluent in Mandarin Chinese.",
+	  chinese: "專業經驗廣泛的前端開發者。很喜歡學心的科技，也要在一個密切和跨職能的團隊工作。專業經驗包括數據分析，金融分析，還有項目和人員管理。愛學習新的語言（外語，編程語言都可以）而我也會講一口流利的國語。"
+	};
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Blog = __webpack_require__(303);
+	
+	var _Blog2 = _interopRequireDefault(_Blog);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var BlogContainer = statefulComponentCreator(_Blog2.default);
+	exports.default = BlogContainer;
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'child-content col-lg-12' },
+	    language === 'English' ? _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Blog'
+	      ),
+	      _react2.default.createElement(
+	        'h4',
+	        null,
+	        'Coming soon...'
+	      )
+	    ) : _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        '\u535A\u5BA2'
+	      ),
+	      _react2.default.createElement(
+	        'h4',
+	        null,
+	        '\u5373\u5C07\u63A8\u51FA...'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Education = __webpack_require__(305);
+	
+	var _Education2 = _interopRequireDefault(_Education);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var EducationContainer = statefulComponentCreator(_Education2.default);
+	exports.default = EducationContainer;
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _resumecontents = __webpack_require__(301);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'education' },
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
+	          language === 'English' ? 'Fullstack Academy of Code' : 'Fullstack\u7DE8\u6210\u9662\u6821',
+	          ' '
+	        )
+	      ),
+	      _resumecontents.education && _resumecontents.education.map(function (school, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          { key: 'school arr ' + i },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
+	            language === 'English' ? school.name : school.name_chinese
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            language === 'English' ? school.degree : school.degree_chinese
+	          ),
+	          _react2.default.createElement(
+	            'h5',
+	            null,
+	            'GPA: ',
+	            school.gpa
+	          )
+	        );
+	      })
+	    )
+	  );
+	};
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Experience = __webpack_require__(307);
+	
+	var _Experience2 = _interopRequireDefault(_Experience);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var ExperienceContainer = statefulComponentCreator(_Experience2.default);
+	exports.default = ExperienceContainer;
+
+/***/ },
+/* 307 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _resumecontents = __webpack_require__(301);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	
+	  var expLang = language === 'English' ? _resumecontents.experience : _resumecontents.experienceChinese;
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'experience' },
+	      expLang.map(function (job, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          { key: 'experience arr ' + i },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            job.company
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            job.position
+	          ),
+	          _react2.default.createElement(
+	            'h5',
+	            null,
+	            job.location,
+	            ' | ',
+	            job.date
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            job.bullets.map(function (bullet, i) {
+	              return _react2.default.createElement(
+	                'li',
+	                { key: 'bullet ' + i },
+	                bullet
+	              );
+	            })
+	          )
+	        );
+	      })
+	    )
+	  );
+	};
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _resumecontents = __webpack_require__(301);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'skills' },
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'TECHNICAL SKILLS'
+	    ),
+	    _react2.default.createElement(
+	      'ul',
+	      null,
+	      _resumecontents.technical.map(function (skill, i) {
+	        return _react2.default.createElement(
+	          'span',
+	          { className: skill.type, key: 'skill arr ' + i },
+	          skill.name
+	        );
+	      })
+	    ),
+	    _react2.default.createElement('hr', null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button-description' },
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-primary' },
+	        'Front-end'
+	      ),
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-danger' },
+	        'Back-end'
+	      ),
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-success' },
+	        'Miscellaneous'
+	      )
+	    )
+	  );
+	};
 
 /***/ }
 /******/ ]);

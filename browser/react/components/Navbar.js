@@ -7,17 +7,6 @@ export default ({toggleChinese, toggleEnglish, language}) => (
   <nav className="navbar navbar-default">
     <div>
 
-      <div className="navbar-header">
-        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span className="sr-only">Toggle navigation</span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-        </button>
-
-      </div>
-
-
       <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
         <ul className="nav navbar-nav">
@@ -38,7 +27,7 @@ export default ({toggleChinese, toggleEnglish, language}) => (
           </li>
         </ul>
 
-        <ul className="nav navbar-nav navbar-right">
+        <ul className="nav navbar-nav navbar-right" id="toggle-lang-tag">
         { language === 'English' ?  (
           <span onClick={toggleChinese} className="toggle-lang navbar-links">繁體中文</span>
           ) :  (
