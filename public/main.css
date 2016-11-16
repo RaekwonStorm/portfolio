@@ -1081,13 +1081,9 @@
 ul .navbar-nav {
   margin-left: 20px; }
 
-@media screen and (max-width: 767x) {
+@media screen and (max-width: 767px) {
   .navbar-links {
     font-size: 25px; } }
-
-@media screen and (max-width: 698x) {
-  .navbar-right {
-    float: left; } }
 
 .navbar-collapse.collapse {
   display: block; }
@@ -1101,21 +1097,14 @@ ul .navbar-nav {
 .navbar-right {
   float: right; }
 
-@media screen and (min-width: 699x) {
-  .small-toggle > a > li {
-    display: none; }
-  .toggle-lang-tag {
-    color: blue; } }
+.toggle-left {
+  display: none; }
 
-@media screen and (max-width: 698x) {
-  .toggle-lang-tag {
-    display: none; }
-    .toggle-lang-tag a {
-      display: none; }
-    .toggle-lang-tag a > span {
-      display: none; }
-  .small-toggle {
-    display: block; } }
+@media screen and (max-width: 698px) {
+  .toggle-left {
+    display: inline; }
+  .toggle-right {
+    display: none; } }
 
 .header-name-plate {
   margin-bottom: 20px; }

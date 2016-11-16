@@ -30636,11 +30636,11 @@
 	              null,
 	              language === 'English' ? _react2.default.createElement(
 	                'span',
-	                { onClick: toggleChinese, className: 'toggle-lang navbar-links' },
+	                { onClick: toggleChinese, className: 'toggle-lang toggle-left navbar-links' },
 	                '\u7E41\u9AD4\u4E2D\u6587'
 	              ) : _react2.default.createElement(
 	                'span',
-	                { onClick: toggleEnglish, className: 'toggle-lang navbar-links' },
+	                { onClick: toggleEnglish, className: 'toggle-lang toggle-left navbar-links' },
 	                'ENGLISH'
 	              )
 	            )
@@ -30651,11 +30651,11 @@
 	          { className: 'nav navbar-nav navbar-right' },
 	          language === 'English' ? _react2.default.createElement(
 	            'span',
-	            { onClick: toggleChinese, className: 'toggle-lang navbar-links' },
+	            { onClick: toggleChinese, className: 'toggle-lang toggle-right navbar-links' },
 	            '\u7E41\u9AD4\u4E2D\u6587'
 	          ) : _react2.default.createElement(
 	            'span',
-	            { onClick: toggleEnglish, className: 'toggle-lang navbar-links' },
+	            { onClick: toggleEnglish, className: 'toggle-lang toggle-right navbar-links' },
 	            'ENGLISH'
 	          )
 	        )

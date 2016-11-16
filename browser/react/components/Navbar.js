@@ -28,9 +28,9 @@ export default ({toggleChinese, toggleEnglish, language}) => (
           <li className="small-toggle">
             <Link>
           { language === 'English' ?  (
-            <span onClick={toggleChinese} className="toggle-lang navbar-links">繁體中文</span>
+            <span onClick={toggleChinese} className="toggle-lang toggle-left navbar-links">繁體中文</span>
             ) :  (
-            <span onClick={toggleEnglish} className="toggle-lang navbar-links">ENGLISH</span>
+            <span onClick={toggleEnglish} className="toggle-lang toggle-left navbar-links">ENGLISH</span>
             )
           }
             </Link>
@@ -39,9 +39,9 @@ export default ({toggleChinese, toggleEnglish, language}) => (
 
         <ul className="nav navbar-nav navbar-right">
         { language === 'English' ?  (
-          <span onClick={toggleChinese} className="toggle-lang navbar-links">繁體中文</span>
+          <span onClick={toggleChinese} className="toggle-lang toggle-right navbar-links">繁體中文</span>
           ) :  (
-          <span onClick={toggleEnglish} className="toggle-lang navbar-links">ENGLISH</span>
+          <span onClick={toggleEnglish} className="toggle-lang toggle-right navbar-links">ENGLISH</span>
           )
         }
         </ul>
