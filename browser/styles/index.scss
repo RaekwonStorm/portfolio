@@ -71,8 +71,27 @@ h5, p, li {
   .homepage-text {
     background: rgba(31,28,13,0.4);
     position: absolute;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  .homepage-text {
+    background: rgba(31,28,13,0.4);
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .homepage-text > h1, h2 {
+    font-size: 20px;
+  }
+  .homepage-text {
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    width: 100%;
   }
 }

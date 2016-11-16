@@ -1052,7 +1052,9 @@
 
 .picture-2 {
   width: 100%;
-  height: 3px; }
+  height: 3px;
+  color: transparent;
+  border-color: transparent; }
   @media screen and (max-width: 992px) {
     .picture-2 {
       display: none; } }
@@ -1083,7 +1085,7 @@ ul .navbar-nav {
   .navbar-links {
     font-size: 25px; } }
 
-@media screen and (max-width: 635x) {
+@media screen and (max-width: 698x) {
   .navbar-right {
     float: left; } }
 
@@ -1098,6 +1100,22 @@ ul .navbar-nav {
 
 .navbar-right {
   float: right; }
+
+@media screen and (min-width: 699x) {
+  .small-toggle > a > li {
+    display: none; }
+  .toggle-lang-tag {
+    color: blue; } }
+
+@media screen and (max-width: 698x) {
+  .toggle-lang-tag {
+    display: none; }
+    .toggle-lang-tag a {
+      display: none; }
+    .toggle-lang-tag a > span {
+      display: none; }
+  .small-toggle {
+    display: block; } }
 
 .header-name-plate {
   margin-bottom: 20px; }
@@ -1160,6 +1178,9 @@ ul .navbar-nav {
 .resume-links:active {
   color: black; }
 
+span.glyphicon-education {
+  margin-right: 10px; }
+
 .project-btn {
   margin-left: 10px; }
 
@@ -1173,6 +1194,23 @@ ul .navbar-nav {
 .portfolio h5 {
   margin-top: 25px;
   margin-bottom: 25px; }
+
+#cryptopass-iframe {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 650px) {
+  #cryptopass-iframe {
+    height: 169px;
+    width: 300px; } }
+
+@media screen and (max-width: 991px) {
+  .portfolio > .project-description {
+    padding: 0 10%; } }
+
+@media screen and (max-width: 750px) {
+  .portfolio > .project-description {
+    padding: 0 0; } }
 
 .lolslide {
   animation-duration: 1s;
@@ -1225,9 +1263,23 @@ h5, p, li {
     color: white; }
   .homepage-background .homepage-text {
     background: rgba(31, 28, 13, 0.4);
+    position: absolute; }
+
+@media screen and (min-width: 668px) {
+  .homepage-text {
+    background: rgba(31, 28, 13, 0.4);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%); } }
+
+@media screen and (max-width: 667px) {
+  .homepage-text > h1, h2 {
+    font-size: 20px; }
+  .homepage-text {
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map*/

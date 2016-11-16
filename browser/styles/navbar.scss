@@ -33,7 +33,7 @@ ul .navbar-nav {
   }
 }
 
-@media screen and (max-width: 635x) {
+@media screen and (max-width: 698x) {
   .navbar-right {
     float: left;
   }
@@ -54,3 +54,29 @@ ul .navbar-nav {
 .navbar-right {
   float: right;
 }
+
+@media screen and (min-width: 699x) {
+  .small-toggle > a > li {
+    display: none;
+  }
+  .toggle-lang-tag {
+    color: blue;
+  }
+}
+
+@media screen and (max-width: 698x) {
+  .toggle-lang-tag {
+    display: none;
+    a {
+      display: none;
+    }
+    a > span {
+      display: none;
+    }
+  }
+  .small-toggle {
+    display: block;
+  }
+}
+
+

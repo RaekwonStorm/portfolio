@@ -25,9 +25,19 @@ export default ({toggleChinese, toggleEnglish, language}) => (
           <li>
             <Link to='/blog' activeClassName="active">{language === 'English' ? (<span className="navbar-links">BLOG</span>) : (<span className="navbar-links">博客</span>)}</Link>
           </li>
+          <li className="small-toggle">
+            <Link>
+          { language === 'English' ?  (
+            <span onClick={toggleChinese} className="toggle-lang navbar-links">繁體中文</span>
+            ) :  (
+            <span onClick={toggleEnglish} className="toggle-lang navbar-links">ENGLISH</span>
+            )
+          }
+            </Link>
+          </li>
         </ul>
 
-        <ul className="nav navbar-nav navbar-right" id="toggle-lang-tag">
+        <ul className="nav navbar-nav navbar-right">
         { language === 'English' ?  (
           <span onClick={toggleChinese} className="toggle-lang navbar-links">繁體中文</span>
           ) :  (

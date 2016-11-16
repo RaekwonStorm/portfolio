@@ -30627,11 +30627,28 @@
 	                '\u535A\u5BA2'
 	              )
 	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'small-toggle' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              null,
+	              language === 'English' ? _react2.default.createElement(
+	                'span',
+	                { onClick: toggleChinese, className: 'toggle-lang navbar-links' },
+	                '\u7E41\u9AD4\u4E2D\u6587'
+	              ) : _react2.default.createElement(
+	                'span',
+	                { onClick: toggleEnglish, className: 'toggle-lang navbar-links' },
+	                'ENGLISH'
+	              )
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'ul',
-	          { className: 'nav navbar-nav navbar-right', id: 'toggle-lang-tag' },
+	          { className: 'nav navbar-nav navbar-right' },
 	          language === 'English' ? _react2.default.createElement(
 	            'span',
 	            { onClick: toggleChinese, className: 'toggle-lang navbar-links' },
@@ -30868,11 +30885,11 @@
 	
 	var cryptopass = {
 	  name: 'CryptoPass',
-	  description: 'Tested and developed a suite of mobile, desktop, and browser tools to manage passwords, credit cards, and other sensitive data using AES encryption for data security',
-	  tech: 'Developed in JavaScript with Express.js, Angular, Node.js, Ionic/Cordova, Electron',
+	  description: 'Tested and developed a suite of mobile, desktop, and browser tools to manage passwords, credit cards, and other sensitive data using AES encryption for data security.',
+	  tech: 'Developed in JavaScript with Express.js, Angular, Node.js, Ionic/Cordova, Electron.',
 	  github: 'https://github.com/RaekwonStorm/cryptopass',
-	  desc_chinese: '發展了一套軟件，包括異動，電腦，和瀏覽器擴展等APP在內；這套軟件用了AES加密幫用戶管理密碼，信用卡等保密資源',
-	  tech_chinese: '用的科技：JavaScript, Express.js, Angular, Node.js, Ionic/Cordova, Electron',
+	  desc_chinese: '發展了一套軟件，包括異動，電腦，和瀏覽器擴展等APP在內；這套軟件用了AES加密幫用戶管理密碼，信用卡等保密資源.',
+	  tech_chinese: '用的科技：JavaScript, Express.js, Angular, Node.js, Ionic/Cordova, Electron.',
 	  date: 'August 2016'
 	};
 	
@@ -30882,53 +30899,42 @@
 	    'div',
 	    { className: 'child-content col-lg-12 portfolio' },
 	    _react2.default.createElement(
-	      'h1',
-	      null,
+	      'div',
+	      { className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12 project-description' },
 	      _react2.default.createElement(
-	        'a',
-	        { href: 'http://www.github.com/raekwonstorm/cryptopass' },
-	        cryptopass.name,
+	        'h1',
+	        null,
 	        _react2.default.createElement(
-	          'span',
-	          { className: 'project-btn btn btn-social-icon btn-github' },
-	          _react2.default.createElement('span', { className: 'fa fa-github social-icons' })
+	          'a',
+	          { href: 'http://www.github.com/raekwonstorm/cryptopass' },
+	          cryptopass.name,
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'project-btn btn btn-social-icon btn-github' },
+	            _react2.default.createElement('span', { className: 'fa fa-github social-icons' })
+	          )
 	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
+	      ),
 	      _react2.default.createElement(
-	        'li',
+	        'h5',
 	        null,
 	        language === 'English' ? cryptopass.description : cryptopass.desc_chinese
 	      ),
 	      _react2.default.createElement(
-	        'li',
+	        'h5',
 	        null,
 	        language === 'English' ? cryptopass.tech : cryptopass.tech_chinese
+	      ),
+	      _react2.default.createElement(
+	        'h5',
+	        null,
+	        language === 'English' ? 'Download CryptoPass at www.cryptopassapp.com for free.' : '\u514D\u8CBB\u4E0B\u8F09CryptoPass\uFF1Awww.cryptopassapp.com'
 	      )
 	    ),
 	    _react2.default.createElement(
-	      'h3',
-	      null,
-	      'CryptoPass Presentation'
-	    ),
-	    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/pyPG_kuOyAA', frameborder: '0', allowfullscreen: true }),
-	    _react2.default.createElement(
-	      'h5',
-	      null,
-	      'CryptoPass is a suite of secure applications which encrypts passwords and other sensitive data with your master password and stores them on your machine. CryptoPass also generates strong random passwords for new subscriptions. All you need is one master password to manage all of your secure passwords. The main application is a desktop application; furthermore, we also developed a chrome browser extension and mobile application.'
-	    ),
-	    _react2.default.createElement(
-	      'h5',
-	      null,
-	      'The desktop application is built on Electron, utilizing NodeJS, AngularJS, and Photon. The mobile application is built on the Ionic Framework, which utilizes Dropbox OAUTH to store your encrypted data, and an option for touchId to store a recovery file in case you forget your password. The chrome extension communicates with the desktop application through a secure localhost socket.io server, ensuring information is kept up to date in your browser.'
-	    ),
-	    _react2.default.createElement(
-	      'h5',
-	      null,
-	      'Download CryptoPass at www.cryptopassapp.com for free.'
+	      'div',
+	      { className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12' },
+	      _react2.default.createElement('iframe', { width: '560', height: '315', id: 'cryptopass-iframe', src: 'https://www.youtube.com/embed/pyPG_kuOyAA', frameborder: '0', allowfullscreen: true })
 	    )
 	  );
 	};

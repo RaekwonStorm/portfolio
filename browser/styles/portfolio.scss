@@ -16,3 +16,27 @@
     margin-bottom: 25px;
   }
 }
+
+#cryptopass-iframe {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  #cryptopass-iframe {
+    height: 169px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .portfolio > .project-description {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .portfolio > .project-description {
+    padding: 0 0;
+  }
+}
