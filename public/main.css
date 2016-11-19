@@ -1104,7 +1104,10 @@ ul .navbar-nav {
   .toggle-left {
     display: inline; }
   .toggle-right {
-    display: none; } }
+    display: none; }
+  .navbar-nav {
+    margin: 0 auto;
+    color: blue; } }
 
 .header-name-plate {
   margin-bottom: 20px; }

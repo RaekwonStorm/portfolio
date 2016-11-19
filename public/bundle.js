@@ -30613,23 +30613,6 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/blog', activeClassName: 'active' },
-	              language === 'English' ? _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                'BLOG'
-	              ) : _react2.default.createElement(
-	                'span',
-	                { className: 'navbar-links' },
-	                '\u535A\u5BA2'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
 	            { className: 'small-toggle' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,

@@ -22,9 +22,10 @@ export default ({toggleChinese, toggleEnglish, language}) => (
           <li>
             <Link to='/travel' activeClassName="active">{language === 'English' ? (<span className="navbar-links">TRAVEL</span>) : (<span className="navbar-links">旅行照片</span>)}</Link>
           </li>
-          <li>
+          {/*<li>
             <Link to='/blog' activeClassName="active">{language === 'English' ? (<span className="navbar-links">BLOG</span>) : (<span className="navbar-links">博客</span>)}</Link>
           </li>
+          */}
           <li className="small-toggle">
             <Link>
           { language === 'English' ?  (
