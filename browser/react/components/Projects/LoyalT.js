@@ -9,7 +9,8 @@ const LoyalT = {
   desc_chinese: '製作了一個移動APP，它將忠心回饋項目實踐用於座落在紐約金融區的Esprezzatura, 一家我很喜歡的咖啡店.',
   tech_chinese: '用的科技：Ionic/Cordova, Angular, and PouchDB.',
   date: 'November 2016',
-  imageUrl: ['/Projects/LoyalT1.png', '/Projects/LoyalT2.png']
+  imageUrl: ['/Projects/LoyalT1.png', '/Projects/LoyalT2.png'],
+  platform: 'Android'
 }
 
 export default ({language}) => (

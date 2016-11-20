@@ -24072,27 +24072,27 @@
 	
 	var _HomeContainer2 = _interopRequireDefault(_HomeContainer);
 	
-	var _Portfolio = __webpack_require__(296);
+	var _Portfolio = __webpack_require__(295);
 	
 	var _Portfolio2 = _interopRequireDefault(_Portfolio);
 	
-	var _TravelContainer = __webpack_require__(299);
+	var _TravelContainer = __webpack_require__(300);
 	
 	var _TravelContainer2 = _interopRequireDefault(_TravelContainer);
 	
-	var _ResumeContainer = __webpack_require__(301);
+	var _ResumeContainer = __webpack_require__(302);
 	
 	var _ResumeContainer2 = _interopRequireDefault(_ResumeContainer);
 	
-	var _EducationContainer = __webpack_require__(314);
+	var _EducationContainer = __webpack_require__(305);
 	
 	var _EducationContainer2 = _interopRequireDefault(_EducationContainer);
 	
-	var _ExperienceContainer = __webpack_require__(315);
+	var _ExperienceContainer = __webpack_require__(307);
 	
 	var _ExperienceContainer2 = _interopRequireDefault(_ExperienceContainer);
 	
-	var _Skills = __webpack_require__(316);
+	var _Skills = __webpack_require__(309);
 	
 	var _Skills2 = _interopRequireDefault(_Skills);
 	
@@ -30817,8 +30817,7 @@
 	// }
 
 /***/ },
-/* 295 */,
-/* 296 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30831,11 +30830,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _CryptopassContainer = __webpack_require__(311);
+	var _CryptopassContainer = __webpack_require__(296);
 	
 	var _CryptopassContainer2 = _interopRequireDefault(_CryptopassContainer);
 	
-	var _LoyalTContainer = __webpack_require__(312);
+	var _LoyalTContainer = __webpack_require__(298);
 	
 	var _LoyalTContainer2 = _interopRequireDefault(_LoyalTContainer);
 	
@@ -30849,6 +30848,36 @@
 	    _react2.default.createElement(_LoyalTContainer2.default, null)
 	  );
 	};
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Cryptopass = __webpack_require__(297);
+	
+	var _Cryptopass2 = _interopRequireDefault(_Cryptopass);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var CryptopassContainer = statefulComponentCreator(_Cryptopass2.default);
+	exports.default = CryptopassContainer;
 
 /***/ },
 /* 297 */
@@ -30932,6 +30961,36 @@
 	  value: true
 	});
 	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _LoyalT = __webpack_require__(299);
+	
+	var _LoyalT2 = _interopRequireDefault(_LoyalT);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var LoyalTContainer = statefulComponentCreator(_LoyalT2.default);
+	exports.default = LoyalTContainer;
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
 	var _react = __webpack_require__(2);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -30946,7 +31005,8 @@
 	  desc_chinese: '製作了一個移動APP，它將忠心回饋項目實踐用於座落在紐約金融區的Esprezzatura, 一家我很喜歡的咖啡店.',
 	  tech_chinese: '用的科技：Ionic/Cordova, Angular, and PouchDB.',
 	  date: 'November 2016',
-	  imageUrl: ['/Projects/LoyalT1.PNG', '/Projects/LoyalT2.PNG']
+	  imageUrl: ['/Projects/LoyalT1.png', '/Projects/LoyalT2.png'],
+	  platform: 'Android'
 	};
 	
 	exports.default = function (_ref) {
@@ -30993,7 +31053,7 @@
 	};
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31004,7 +31064,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _TravelImages = __webpack_require__(300);
+	var _TravelImages = __webpack_require__(301);
 	
 	var _TravelImages2 = _interopRequireDefault(_TravelImages);
 	
@@ -31035,7 +31095,7 @@
 	exports.default = TravelContainer;
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31094,7 +31154,7 @@
 	};
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31105,7 +31165,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _Resume = __webpack_require__(302);
+	var _Resume = __webpack_require__(303);
 	
 	var _Resume2 = _interopRequireDefault(_Resume);
 	
@@ -31124,7 +31184,7 @@
 	exports.default = ResumeContainer;
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31139,7 +31199,7 @@
 	
 	var _reactRouter = __webpack_require__(209);
 	
-	var _resumecontents = __webpack_require__(313);
+	var _resumecontents = __webpack_require__(304);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -31384,75 +31444,7 @@
 	//       </div>
 
 /***/ },
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Cryptopass = __webpack_require__(297);
-	
-	var _Cryptopass2 = _interopRequireDefault(_Cryptopass);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var CryptopassContainer = statefulComponentCreator(_Cryptopass2.default);
-	exports.default = CryptopassContainer;
-
-/***/ },
-/* 312 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _LoyalT = __webpack_require__(298);
-	
-	var _LoyalT2 = _interopRequireDefault(_LoyalT);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var LoyalTContainer = statefulComponentCreator(_LoyalT2.default);
-	exports.default = LoyalTContainer;
-
-/***/ },
-/* 313 */
+/* 304 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31582,7 +31574,7 @@
 	};
 
 /***/ },
-/* 314 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31593,7 +31585,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _Education = __webpack_require__(318);
+	var _Education = __webpack_require__(306);
 	
 	var _Education2 = _interopRequireDefault(_Education);
 	
@@ -31612,7 +31604,71 @@
 	exports.default = EducationContainer;
 
 /***/ },
-/* 315 */
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _resumecontents = __webpack_require__(304);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'education' },
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
+	          language === 'English' ? 'Fullstack Academy of Code' : 'Fullstack\u7DE8\u6210\u9662\u6821',
+	          ' '
+	        )
+	      ),
+	      _resumecontents.education && _resumecontents.education.map(function (school, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          { key: 'school arr ' + i },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
+	            language === 'English' ? school.name : school.name_chinese
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            language === 'English' ? school.degree : school.degree_chinese
+	          ),
+	          _react2.default.createElement(
+	            'h5',
+	            null,
+	            'GPA: ',
+	            school.gpa
+	          )
+	        );
+	      })
+	    )
+	  );
+	};
+
+/***/ },
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31623,7 +31679,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _Experience = __webpack_require__(317);
+	var _Experience = __webpack_require__(308);
 	
 	var _Experience2 = _interopRequireDefault(_Experience);
 	
@@ -31642,7 +31698,7 @@
 	exports.default = ExperienceContainer;
 
 /***/ },
-/* 316 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31655,68 +31711,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _resumecontents = __webpack_require__(313);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function () {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'skills' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'TECHNICAL SKILLS'
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _resumecontents.technical.map(function (skill, i) {
-	        return _react2.default.createElement(
-	          'span',
-	          { className: skill.type, key: 'skill arr ' + i },
-	          skill.name
-	        );
-	      })
-	    ),
-	    _react2.default.createElement('hr', null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'button-description' },
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-primary' },
-	        'Front-end'
-	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-danger' },
-	        'Back-end'
-	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-success' },
-	        'Miscellaneous'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 317 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _resumecontents = __webpack_require__(313);
+	var _resumecontents = __webpack_require__(304);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -31769,7 +31764,7 @@
 	};
 
 /***/ },
-/* 318 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31782,52 +31777,49 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _resumecontents = __webpack_require__(313);
+	var _resumecontents = __webpack_require__(304);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
+	exports.default = function () {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
+	    { className: 'skills' },
 	    _react2.default.createElement(
-	      'div',
-	      { className: 'education' },
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
-	          language === 'English' ? 'Fullstack Academy of Code' : 'Fullstack\u7DE8\u6210\u9662\u6821',
-	          ' '
-	        )
-	      ),
-	      _resumecontents.education && _resumecontents.education.map(function (school, i) {
+	      'h1',
+	      null,
+	      'TECHNICAL SKILLS'
+	    ),
+	    _react2.default.createElement(
+	      'ul',
+	      null,
+	      _resumecontents.technical.map(function (skill, i) {
 	        return _react2.default.createElement(
-	          'div',
-	          { key: 'school arr ' + i },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
-	            language === 'English' ? school.name : school.name_chinese
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            language === 'English' ? school.degree : school.degree_chinese
-	          ),
-	          _react2.default.createElement(
-	            'h5',
-	            null,
-	            'GPA: ',
-	            school.gpa
-	          )
+	          'span',
+	          { className: skill.type, key: 'skill arr ' + i },
+	          skill.name
 	        );
 	      })
+	    ),
+	    _react2.default.createElement('hr', null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button-description' },
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-primary' },
+	        'Front-end'
+	      ),
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-danger' },
+	        'Back-end'
+	      ),
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-success' },
+	        'Miscellaneous'
+	      )
 	    )
 	  );
 	};
