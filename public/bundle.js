@@ -24072,31 +24072,27 @@
 	
 	var _HomeContainer2 = _interopRequireDefault(_HomeContainer);
 	
-	var _PortfolioContainer = __webpack_require__(295);
+	var _Portfolio = __webpack_require__(296);
 	
-	var _PortfolioContainer2 = _interopRequireDefault(_PortfolioContainer);
+	var _Portfolio2 = _interopRequireDefault(_Portfolio);
 	
-	var _TravelContainer = __webpack_require__(297);
+	var _TravelContainer = __webpack_require__(299);
 	
 	var _TravelContainer2 = _interopRequireDefault(_TravelContainer);
 	
-	var _ResumeContainer = __webpack_require__(299);
+	var _ResumeContainer = __webpack_require__(301);
 	
 	var _ResumeContainer2 = _interopRequireDefault(_ResumeContainer);
 	
-	var _BlogContainer = __webpack_require__(302);
-	
-	var _BlogContainer2 = _interopRequireDefault(_BlogContainer);
-	
-	var _EducationContainer = __webpack_require__(304);
+	var _EducationContainer = __webpack_require__(314);
 	
 	var _EducationContainer2 = _interopRequireDefault(_EducationContainer);
 	
-	var _ExperienceContainer = __webpack_require__(306);
+	var _ExperienceContainer = __webpack_require__(315);
 	
 	var _ExperienceContainer2 = _interopRequireDefault(_ExperienceContainer);
 	
-	var _Skills = __webpack_require__(308);
+	var _Skills = __webpack_require__(316);
 	
 	var _Skills2 = _interopRequireDefault(_Skills);
 	
@@ -24119,12 +24115,12 @@
 	        _react2.default.createElement(_reactRouter.Route, { path: 'education', component: _EducationContainer2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: 'experience', component: _ExperienceContainer2.default })
 	      ),
-	      _react2.default.createElement(_reactRouter.Route, { path: '/work', component: _PortfolioContainer2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: '/travel', component: _TravelContainer2.default, onEnter: _enterHooks.onTravelEnter }),
-	      _react2.default.createElement(_reactRouter.Route, { path: '/blog', component: _BlogContainer2.default })
+	      _react2.default.createElement(_reactRouter.Route, { path: '/work', component: _Portfolio2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: '/travel', component: _TravelContainer2.default, onEnter: _enterHooks.onTravelEnter })
 	    )
 	  );
 	};
+	// import BlogContainer from './containers/BlogContainer';
 
 /***/ },
 /* 209 */
@@ -30821,7 +30817,8 @@
 	// }
 
 /***/ },
-/* 295 */
+/* 295 */,
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30830,28 +30827,31 @@
 	  value: true
 	});
 	
-	var _reactRedux = __webpack_require__(173);
+	var _react = __webpack_require__(2);
 	
-	var _Portfolio = __webpack_require__(296);
+	var _react2 = _interopRequireDefault(_react);
 	
-	var _Portfolio2 = _interopRequireDefault(_Portfolio);
+	var _CryptopassContainer = __webpack_require__(311);
+	
+	var _CryptopassContainer2 = _interopRequireDefault(_CryptopassContainer);
+	
+	var _LoyalTContainer = __webpack_require__(312);
+	
+	var _LoyalTContainer2 = _interopRequireDefault(_LoyalTContainer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'child-content col-lg-12 portfolio' },
+	    _react2.default.createElement(_CryptopassContainer2.default, null),
+	    _react2.default.createElement(_LoyalTContainer2.default, null)
+	  );
 	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var PortfolioContainer = statefulComponentCreator(_Portfolio2.default);
-	exports.default = PortfolioContainer;
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30869,10 +30869,10 @@
 	var cryptopass = {
 	  name: 'CryptoPass',
 	  description: 'Tested and developed a suite of mobile, desktop, and browser tools to manage passwords, credit cards, and other sensitive data using AES encryption for data security.',
-	  tech: 'Developed in JavaScript with Express.js, Angular, Node.js, Ionic/Cordova, Electron.',
+	  tech: 'Developed in JavaScript with Express, Angular, Node, Ionic/Cordova, Electron.',
 	  github: 'https://github.com/RaekwonStorm/cryptopass',
 	  desc_chinese: '發展了一套軟件，包括異動，電腦，和瀏覽器擴展等APP在內；這套軟件用了AES加密幫用戶管理密碼，信用卡等保密資源.',
-	  tech_chinese: '用的科技：JavaScript, Express.js, Angular, Node.js, Ionic/Cordova, Electron.',
+	  tech_chinese: '用的科技：JavaScript, Express, Angular, Node, Ionic/Cordova, Electron.',
 	  date: 'August 2016'
 	};
 	
@@ -30880,7 +30880,7 @@
 	  var language = _ref.language;
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'child-content col-lg-12 portfolio' },
+	    { className: 'row' },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12 project-description' },
@@ -30889,7 +30889,7 @@
 	        null,
 	        _react2.default.createElement(
 	          'a',
-	          { href: 'http://www.github.com/raekwonstorm/cryptopass' },
+	          { href: cryptopass.github },
 	          cryptopass.name,
 	          _react2.default.createElement(
 	            'span',
@@ -30923,7 +30923,77 @@
 	};
 
 /***/ },
-/* 297 */
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var LoyalT = {
+	  name: 'LoyalT',
+	  description: 'A simple mobile app implementing a loyalty rewards program for our favorite coffee cart in NYC financial district, Esprezzatura.',
+	  tech: 'Built for Android using Ionic/Cordova framework, Angular, and PouchDB.',
+	  github: 'https://github.com/Octowl/loyalT-app',
+	  desc_chinese: '製作了一個移動APP，它將忠心回饋項目實踐用於座落在紐約金融區的Esprezzatura, 一家我很喜歡的咖啡店.',
+	  tech_chinese: '用的科技：Ionic/Cordova, Angular, and PouchDB.',
+	  date: 'November 2016',
+	  imageUrl: ['/Projects/LoyalT1.PNG', '/Projects/LoyalT2.PNG']
+	};
+	
+	exports.default = function (_ref) {
+	  var language = _ref.language;
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'row project-container' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12 project-description' },
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { href: LoyalT.github },
+	          LoyalT.name,
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'project-btn btn btn-social-icon btn-github' },
+	            _react2.default.createElement('span', { className: 'fa fa-github social-icons' })
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'h5',
+	        null,
+	        language === 'English' ? LoyalT.description : LoyalT.desc_chinese
+	      ),
+	      _react2.default.createElement(
+	        'h5',
+	        null,
+	        language === 'English' ? LoyalT.tech : LoyalT.tech_chinese
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12 project-media' },
+	      LoyalT.imageUrl.map(function (image, i) {
+	        return _react2.default.createElement('img', { src: image, key: i });
+	      })
+	    )
+	  );
+	};
+
+/***/ },
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30934,7 +31004,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _TravelImages = __webpack_require__(298);
+	var _TravelImages = __webpack_require__(300);
 	
 	var _TravelImages2 = _interopRequireDefault(_TravelImages);
 	
@@ -30965,7 +31035,7 @@
 	exports.default = TravelContainer;
 
 /***/ },
-/* 298 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31024,7 +31094,7 @@
 	};
 
 /***/ },
-/* 299 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31035,7 +31105,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _Resume = __webpack_require__(300);
+	var _Resume = __webpack_require__(302);
 	
 	var _Resume2 = _interopRequireDefault(_Resume);
 	
@@ -31054,7 +31124,7 @@
 	exports.default = ResumeContainer;
 
 /***/ },
-/* 300 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31069,7 +31139,7 @@
 	
 	var _reactRouter = __webpack_require__(209);
 	
-	var _resumecontents = __webpack_require__(301);
+	var _resumecontents = __webpack_require__(313);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -31314,7 +31384,75 @@
 	//       </div>
 
 /***/ },
-/* 301 */
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _Cryptopass = __webpack_require__(297);
+	
+	var _Cryptopass2 = _interopRequireDefault(_Cryptopass);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var CryptopassContainer = statefulComponentCreator(_Cryptopass2.default);
+	exports.default = CryptopassContainer;
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _reactRedux = __webpack_require__(173);
+	
+	var _LoyalT = __webpack_require__(298);
+	
+	var _LoyalT2 = _interopRequireDefault(_LoyalT);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
+	  var language = _ref.language;
+	
+	  return {
+	    language: language
+	  };
+	};
+	
+	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
+	var LoyalTContainer = statefulComponentCreator(_LoyalT2.default);
+	exports.default = LoyalTContainer;
+
+/***/ },
+/* 313 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31444,7 +31582,7 @@
 	};
 
 /***/ },
-/* 302 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31455,88 +31593,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _Blog = __webpack_require__(303);
-	
-	var _Blog2 = _interopRequireDefault(_Blog);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var mapStateToProps = function mapStateToProps(_ref, ownProps) {
-	  var language = _ref.language;
-	
-	  return {
-	    language: language
-	  };
-	};
-	
-	var statefulComponentCreator = (0, _reactRedux.connect)(mapStateToProps);
-	var BlogContainer = statefulComponentCreator(_Blog2.default);
-	exports.default = BlogContainer;
-
-/***/ },
-/* 303 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'child-content col-lg-12' },
-	    language === 'English' ? _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Blog'
-	      ),
-	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        'Coming soon...'
-	      )
-	    ) : _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        '\u535A\u5BA2'
-	      ),
-	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        '\u5373\u5C07\u63A8\u51FA...'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 304 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _reactRedux = __webpack_require__(173);
-	
-	var _Education = __webpack_require__(305);
+	var _Education = __webpack_require__(318);
 	
 	var _Education2 = _interopRequireDefault(_Education);
 	
@@ -31555,71 +31612,7 @@
 	exports.default = EducationContainer;
 
 /***/ },
-/* 305 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _resumecontents = __webpack_require__(301);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (_ref) {
-	  var language = _ref.language;
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'education' },
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
-	          language === 'English' ? 'Fullstack Academy of Code' : 'Fullstack\u7DE8\u6210\u9662\u6821',
-	          ' '
-	        )
-	      ),
-	      _resumecontents.education && _resumecontents.education.map(function (school, i) {
-	        return _react2.default.createElement(
-	          'div',
-	          { key: 'school arr ' + i },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
-	            language === 'English' ? school.name : school.name_chinese
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            language === 'English' ? school.degree : school.degree_chinese
-	          ),
-	          _react2.default.createElement(
-	            'h5',
-	            null,
-	            'GPA: ',
-	            school.gpa
-	          )
-	        );
-	      })
-	    )
-	  );
-	};
-
-/***/ },
-/* 306 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31630,7 +31623,7 @@
 	
 	var _reactRedux = __webpack_require__(173);
 	
-	var _Experience = __webpack_require__(307);
+	var _Experience = __webpack_require__(317);
 	
 	var _Experience2 = _interopRequireDefault(_Experience);
 	
@@ -31649,7 +31642,7 @@
 	exports.default = ExperienceContainer;
 
 /***/ },
-/* 307 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31662,7 +31655,68 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _resumecontents = __webpack_require__(301);
+	var _resumecontents = __webpack_require__(313);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'skills' },
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'TECHNICAL SKILLS'
+	    ),
+	    _react2.default.createElement(
+	      'ul',
+	      null,
+	      _resumecontents.technical.map(function (skill, i) {
+	        return _react2.default.createElement(
+	          'span',
+	          { className: skill.type, key: 'skill arr ' + i },
+	          skill.name
+	        );
+	      })
+	    ),
+	    _react2.default.createElement('hr', null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button-description' },
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-primary' },
+	        'Front-end'
+	      ),
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-danger' },
+	        'Back-end'
+	      ),
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'btn btn-success' },
+	        'Miscellaneous'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _resumecontents = __webpack_require__(313);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -31715,7 +31769,7 @@
 	};
 
 /***/ },
-/* 308 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31728,49 +31782,52 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _resumecontents = __webpack_require__(301);
+	var _resumecontents = __webpack_require__(313);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = function () {
+	exports.default = function (_ref) {
+	  var language = _ref.language;
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'skills' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'TECHNICAL SKILLS'
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _resumecontents.technical.map(function (skill, i) {
-	        return _react2.default.createElement(
-	          'span',
-	          { className: skill.type, key: 'skill arr ' + i },
-	          skill.name
-	        );
-	      })
-	    ),
-	    _react2.default.createElement('hr', null),
+	    null,
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'button-description' },
+	      { className: 'education' },
 	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-primary' },
-	        'Front-end'
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
+	          language === 'English' ? 'Fullstack Academy of Code' : 'Fullstack\u7DE8\u6210\u9662\u6821',
+	          ' '
+	        )
 	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-danger' },
-	        'Back-end'
-	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'btn btn-success' },
-	        'Miscellaneous'
-	      )
+	      _resumecontents.education && _resumecontents.education.map(function (school, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          { key: 'school arr ' + i },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),
+	            language === 'English' ? school.name : school.name_chinese
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            language === 'English' ? school.degree : school.degree_chinese
+	          ),
+	          _react2.default.createElement(
+	            'h5',
+	            null,
+	            'GPA: ',
+	            school.gpa
+	          )
+	        );
+	      })
 	    )
 	  );
 	};

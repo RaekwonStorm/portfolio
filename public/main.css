@@ -1069,6 +1069,9 @@
 .nav > li > a {
   padding-left: 0;
   padding-right: 30px; }
+  @media screen and (max-width: 667px) {
+    .nav > li > a {
+      padding-right: 10px; } }
 
 .navbar-links {
   color: black;
@@ -1081,9 +1084,11 @@
 ul .navbar-nav {
   margin-left: 20px; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 667px) {
   .navbar-links {
-    font-size: 25px; } }
+    font-size: 20px; }
+  #bs-example-navbar-collapse-1 {
+    padding-right: 0; } }
 
 .navbar-collapse.collapse {
   display: block; }
@@ -1203,6 +1208,18 @@ span.glyphicon-education {
 @media screen and (max-width: 750px) {
   .portfolio > .project-description {
     padding: 0 0; } }
+
+.project-media {
+  text-align: center; }
+  @media screen and (max-width: 1205px) {
+    .project-media img {
+      height: 400px; } }
+  @media screen and (max-width: 667px) {
+    .project-media img {
+      height: 275px; } }
+
+.project-container {
+  margin-top: 40px; }
 
 .lolslide {
   animation-duration: 1s;

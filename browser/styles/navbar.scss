@@ -10,6 +10,9 @@
 .nav > li > a {
   padding-left: 0;
   padding-right: 30px;
+  @media screen and (max-width: 667px) {
+    padding-right: 10px;
+  }
 }
 
 .navbar-links {
@@ -26,10 +29,12 @@ ul .navbar-nav {
   margin-left: 20px;
 }
 
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 667px) {
   .navbar-links {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  #bs-example-navbar-collapse-1 {
+    padding-right: 0;
   }
 }
 

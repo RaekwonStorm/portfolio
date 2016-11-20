@@ -40,3 +40,21 @@
     padding: 0 0;
   }
 }
+
+.project-media {
+  text-align: center;
+  @media screen and (max-width: 1205px) {
+    img {
+      height: 400px;
+    }
+  }
+  @media screen and (max-width: 667px) {
+    img {
+      height: 275px;
+    }
+  }
+}
+
+.project-container {
+  margin-top: 40px;
+}

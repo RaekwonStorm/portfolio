@@ -1,7 +1,7 @@
 'use strict';
 
 import { connect } from 'react-redux';
-import Education from '../components/Education';
+import Experience from '../../components/ResumeComponents/Experience';
 
 const mapStateToProps = function ({language}, ownProps) {
   return {
@@ -11,5 +11,5 @@ const mapStateToProps = function ({language}, ownProps) {
 
 
 const statefulComponentCreator = connect(mapStateToProps);
-const EducationContainer = statefulComponentCreator(Education);
-export default EducationContainer;
+const ExperienceContainer = statefulComponentCreator(Experience);
+export default ExperienceContainer;

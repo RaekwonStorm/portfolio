@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import {Link} from 'react-router';
-import { summary } from './resumecontents';
+import { summary } from './ResumeComponents/resumecontents';
 
 
 export default ({language, children}) => (

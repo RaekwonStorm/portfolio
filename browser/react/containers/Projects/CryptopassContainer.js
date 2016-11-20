@@ -1,7 +1,7 @@
 'use strict';
 
 import { connect } from 'react-redux';
-import Portfolio from '../components/Portfolio';
+import Cryptopass from '../../components/Projects/Cryptopass';
 
 const mapStateToProps = function ({language}, ownProps) {
   return {
@@ -11,5 +11,5 @@ const mapStateToProps = function ({language}, ownProps) {
 
 
 const statefulComponentCreator = connect(mapStateToProps);
-const PortfolioContainer = statefulComponentCreator(Portfolio);
-export default PortfolioContainer;
+const CryptopassContainer = statefulComponentCreator(Cryptopass);
+export default CryptopassContainer;
